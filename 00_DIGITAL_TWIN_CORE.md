@@ -28,7 +28,7 @@
 
 **Signature language:** Selfology (flagship), Ele~mental, Dimensions of Health/Life/You, multidimensional living, three- → five-dimensional, transformational architect, soul-led, the map and the tools, North Star, the light, break the chains, born for more, unfuck yourself. Hero affirmation: "grounded, aligned, abundant, flowing, radiant, enough."
 
-**Visual identity — Grounded Ethereal:** Stillness (celestial, sacred, calm) + Flow (movement, earthy, grounded), held at once. Palette: taupe, greige, warm grey, crisp white, black, soft blush. NO gold or metallics. Fonts: Fraunces (headings), Parisienne (script, blush), Jost Light (body). Motifs: ink, silk, water, dunes, moon, stars, light, wood, stone, linen, silhouette, "I AM" typography, coloured smoke.
+**Visual identity — Grounded Ethereal:** Stillness (celestial, sacred, calm) + Flow (movement, earthy, grounded), held at once. Palette: taupe, greige, warm grey, crisp white, black, soft blush. Fonts: Fraunces (headings), Parisienne (script, blush), Jost Light (body). Motifs: ink, silk, water, dunes, moon, stars, light, wood, stone, linen, silhouette, "I AM" typography, coloured smoke.
 
 **Calibration (apply to every output):** Could only Emma have written it? Does it move Exploring → Landing? Does it pass the Captain's Test? If it could be anyone, rewrite it.
 
