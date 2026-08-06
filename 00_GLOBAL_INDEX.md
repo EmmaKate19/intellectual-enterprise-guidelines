@@ -36,7 +36,7 @@ Sequence is **fixed**. Each stage = its own chat. Lower stages expand higher sta
 
 | # | Stage file | Maps to Blueprint | Status | Chat |
 |---|---|---|---|---|
-| 01 | 01_STAGE_CHARTER.md | Document 0.0 — Blueprint Charter & Editorial Standard | ☐ Not started | — |
+| 01 | 01_STAGE_CHARTER.md | Document 0.0 — Blueprint Charter & Editorial Standard | ☑ Complete (v0.0.1, founder-signed 06 Aug 2026) | — |
 | 02 | 02_STAGE_CONSTITUTION.md | Book I — Constitution (audit phase first, then draft) | ☐ Not started | — |
 | 03 | 03_STAGE_ENTERPRISE_ARCH.md | Book II — Enterprise Architecture | ☐ Not started | — |
 | 04 | 04_STAGE_GOVERNANCE.md | Book III — Governance | ☐ Not started | — |
@@ -83,7 +83,12 @@ Sequence is **fixed**. Each stage = its own chat. Lower stages expand higher sta
 
 > **Append-only.** Each completed stage adds its handover manifest here (max 5 bullets each — see HANDOVER_PROTOCOL.md). This is how downstream stages inherit upstream decisions without re-reading the full stage files. If this section exceeds ~600 words, migrate settled bullets into the relevant stage file and leave a one-line pointer.
 
-**Stage 01 — Charter:** _(empty — not yet completed)_
+**Stage 01 — Charter:**
+1. **What was completed:** Document 0.0 v0.0.1 — Blueprint Charter & Editorial Standard. 16 sections, 9-page A4 PDF (Grounded Ethereal design), founder-signed no revisions. Master .md, print-ready HTML+CSS, and PDF produced. All brief §8.2 required contents delivered; all brief §§9–14 ratifications performed.
+2. **What was decided:** Five decisions ratified — DEC-0.0-001 eleven Enterprise Design Principles (5/11 distinction retained); DEC-0.0-002 four-state change lifecycle + two-track Identity/Implementation mechanism; DEC-0.0-003 Enterprise Knowledge Standard (minimum-sufficient, Adaptive); DEC-0.0-004 stable permanent section IDs (AI-reasoning substrate); DEC-0.0-005 formal-institutional register for architectural documents (founder language quoted verbatim).
+3. **What is unresolved / deferred:** Enterprise Flywheel phrasing (brief §5.9/§17) — flagged for Book I audit, not pre-empted. Whether a more authoritative version of the Founder Constitution exists — assumption logged that the comprehensive master is complete. Book I vocabulary additions (e.g., organisational-scope "Constitution" definition) deferred to Book I via Adaptive update.
+4. **What the next stage must know:** Next is **Book I Audit Phase** — *not* drafting. Run a five-point audit of the Founder Constitution (immutable principles · emerging organisational principles · areas requiring clarification · potential contradictions · missing governance elements) → produce a findings document → founder reviews → *then* drafting begins. Audit subject: `EK PB - Digital twin (Master document), Comprehensive.md` (in-project, read). Audit is reading-and-analysis, not a drafting sprint — design delivery to protect founder energy (Principle 7).
+5. **GitHub commit reference:** Commit `f673db0` on `main` branch of `intellectual-enterprise-guidelines` repo. Updates: `01_STAGE_CHARTER.md` (status → ☑ Complete, handover manifest), `00_GLOBAL_INDEX.md` (§6 manifest), `deliverables/` (master .md, 9-page PDF, HTML+CSS). **Push pending — founder GitHub token required to complete remote push.**
 **Stage 02 — Constitution:** _(empty)_
 **Stage 03 — Enterprise Architecture:** _(empty)_
 **Stage 04 — Governance:** _(empty)_

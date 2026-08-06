@@ -1,0 +1,191 @@
+/* Document 0.0 — Blueprint Charter & Editorial Standard
+   Grounded Ethereal design system · print-ready A4 */
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Parisienne&family=Jost:wght@300;400&display=swap');
+
+:root{
+  --taupe:#a29386;
+  --greige:#c5bcb1;
+  --warm-grey:#b4ada8;
+  --crisp-white:#f6f4f2;
+  --black:#141414;
+  --soft-blush:#e3cac7;
+  --ink:#262423;
+  --muted:#6f665e;
+  --rule:#d8d1c9;
+}
+
+@page{
+  size:A4;
+  margin:22mm 20mm 24mm 20mm;
+  @bottom-center{
+    content:"Document 0.0 — Blueprint Charter & Editorial Standard";
+    font-family:"Jost",sans-serif; font-weight:300; font-size:7.5pt;
+    color:var(--muted); letter-spacing:.18em; text-transform:uppercase;
+  }
+  @bottom-right{
+    content:"Page " counter(page) " of " counter(pages);
+    font-family:"Jost",sans-serif; font-weight:300; font-size:7.5pt;
+    color:var(--muted);
+  }
+}
+
+*{box-sizing:border-box;}
+html,body{margin:0; padding:0; background:var(--crisp-white);}
+
+body{
+  font-family:"Jost",sans-serif; font-weight:300;
+  font-size:10pt; line-height:1.62; color:var(--ink);
+  -webkit-print-color-adjust:exact; print-color-adjust:exact;
+}
+
+/* ---------- COVER ---------- */
+.cover{
+  page-break-after:always;
+  min-height:240mm;
+  display:flex; flex-direction:column; justify-content:space-between;
+  padding:6mm 2mm 2mm 2mm;
+}
+.cover .top{ display:flex; justify-content:space-between; align-items:flex-start;}
+.cover .ek{
+  font-family:"Parisienne",cursive; font-size:20pt; color:var(--soft-blush);
+  letter-spacing:.02em;
+}
+.cover .tag{
+  font-family:"Jost",sans-serif; font-weight:300; font-size:7.5pt;
+  letter-spacing:.32em; text-transform:uppercase; color:var(--muted);
+  text-align:right; max-width:48mm; line-height:1.9;
+}
+.cover .center{ margin-top:auto; margin-bottom:auto; text-align:center;}
+.cover .docnum{
+  font-family:"Jost",sans-serif; font-weight:300; font-size:9pt;
+  letter-spacing:.5em; text-transform:uppercase; color:var(--taupe);
+  margin-bottom:10mm;
+}
+.cover h1{
+  font-family:"Fraunces",serif; font-weight:300; font-size:33pt;
+  line-height:1.16; color:var(--black); margin:0;
+  letter-spacing:-.005em;
+}
+.cover h1 em{
+  font-family:"Parisienne",cursive; font-style:normal; font-weight:400;
+  color:var(--soft-blush); font-size:30pt;
+}
+.cover .sub{
+  margin-top:9mm; font-family:"Fraunces",serif; font-weight:300;
+  font-style:italic; font-size:12pt; color:var(--muted); max-width:130mm; margin-left:auto; margin-right:auto;
+}
+.cover .blush-rule{
+  width:34mm; height:1px; background:var(--soft-blush); margin:12mm auto 0;
+}
+.cover .footer{
+  display:flex; justify-content:space-between; align-items:flex-end;
+  font-family:"Jost",sans-serif; font-weight:300; font-size:7.5pt;
+  letter-spacing:.2em; text-transform:uppercase; color:var(--muted);
+}
+.cover .footer .brand{ font-family:"Fraunces",serif; font-style:italic; font-weight:300; font-size:10pt; letter-spacing:.04em; text-transform:none; color:var(--taupe);}
+
+/* ---------- CONTENT ---------- */
+h2.section{
+  font-family:"Fraunces",serif; font-weight:400; font-size:16pt;
+  color:var(--black); margin:0 0 3mm 0; line-height:1.2;
+  page-break-after:avoid; page-break-before:auto;
+}
+h2.section .id{ color:var(--taupe); font-weight:300; margin-right:.4em;}
+h3{
+  font-family:"Fraunces",serif; font-weight:400; font-size:11.5pt;
+  color:var(--ink); margin:5mm 0 2mm 0; page-break-after:avoid;
+}
+p{ margin:0 0 2.4mm 0; }
+strong{ font-weight:400; color:var(--black); }
+em{ font-style:italic; }
+
+.section-block{ page-break-inside:auto; margin-bottom:5mm; }
+.section-block + .section-block{ page-break-before:auto; }
+
+/* stability tag */
+.tag-stab{
+  display:inline-block; font-family:"Jost",sans-serif; font-weight:300;
+  font-size:6.8pt; letter-spacing:.28em; text-transform:uppercase;
+  color:var(--crisp-white); background:var(--taupe);
+  padding:1.1mm 2.4mm; border-radius:1px; margin-left:3mm;
+  vertical-align:middle;
+}
+.tag-stab.immutable{ background:var(--black); }
+.tag-stab.adaptive{ background:var(--soft-blush); color:var(--black);}
+.tag-stab.experimental{ background:var(--warm-grey); }
+
+/* evidence label */
+.ev{
+  font-family:"Jost",sans-serif; font-weight:400; font-size:8pt;
+  color:var(--muted); border-left:2px solid var(--soft-blush);
+  padding:1.6mm 0 1.6mm 3mm; margin:2mm 0 3mm 0; background:transparent;
+}
+.ev strong{ color:var(--taupe); font-weight:400; letter-spacing:.04em;}
+
+/* blockquote / callout */
+blockquote, .callout{
+  margin:3mm 0; padding:3.5mm 5mm; background:#efeae4;
+  border-left:2px solid var(--soft-blush);
+  font-family:"Fraunces",serif; font-weight:300; font-style:italic;
+  font-size:10.5pt; color:var(--ink); line-height:1.5;
+}
+blockquote p{ margin:0; }
+
+/* code / hierarchy diagrams */
+pre{
+  font-family:"Jost",sans-serif; font-weight:300; font-size:8.6pt;
+  background:#efeae4; border-left:2px solid var(--greige);
+  padding:3.5mm 5mm; margin:3mm 0; white-space:pre-wrap;
+  color:var(--ink); line-height:1.5; page-break-inside:avoid;
+}
+
+/* tables */
+table{
+  width:100%; border-collapse:collapse; margin:3mm 0 4mm 0;
+  font-size:8.6pt; page-break-inside:auto;
+}
+th{
+  text-align:left; font-family:"Jost",sans-serif; font-weight:400;
+  font-size:7.6pt; letter-spacing:.18em; text-transform:uppercase;
+  color:var(--muted); border-bottom:1px solid var(--rule);
+  padding:2.4mm 2mm; vertical-align:bottom;
+}
+td{
+  border-bottom:1px solid var(--rule); padding:2.6mm 2mm;
+  vertical-align:top; line-height:1.45;
+}
+tr{ page-break-inside:avoid; }
+td strong{ color:var(--black); }
+
+/* lists */
+ul,ol{ margin:0 0 2.6mm 5mm; padding:0; }
+li{ margin:0 0 1.4mm 0; }
+
+/* header block (document identity) */
+.idblock{
+  background:#efeae4; border-left:2px solid var(--soft-blush);
+  padding:4mm 5mm; margin:0 0 6mm 0;
+}
+.idblock p{ margin:0 0 1.4mm 0; font-size:9pt;}
+.idblock p:last-child{ margin-bottom:0;}
+.idblock .k{
+  font-family:"Jost",sans-serif; font-weight:400; font-size:7.4pt;
+  letter-spacing:.2em; text-transform:uppercase; color:var(--taupe);
+}
+
+hr.soft{ border:0; border-top:1px solid var(--rule); margin:6mm 0;}
+hr.blush{ border:0; border-top:1px solid var(--soft-blush); margin:5mm 0; width:34mm;}
+
+.note-end{
+  margin-top:8mm; padding-top:3mm; border-top:1px solid var(--rule);
+  font-family:"Fraunces",serif; font-style:italic; font-weight:300;
+  font-size:9.5pt; color:var(--muted); text-align:center;
+}
+
+/* keep first heading of a section with its tag line */
+h2.section{ break-after:avoid; }
+h3{ break-after:avoid; }
+
+/* avoid orphaned section titles at page bottom */
+.section-block{ break-inside:auto; }
