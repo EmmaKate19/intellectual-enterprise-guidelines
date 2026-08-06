@@ -8,7 +8,7 @@
   size: A4;
   margin: 22mm 20mm 20mm 20mm;
   @bottom-center {
-    content: "Book I — Constitution · Audit Phase — Findings   ·   v0.1   ·   page " counter(page) " of " counter(pages);
+    content: "Book I — Constitution · Audit Phase — Findings   ·   v0.2.1   ·   page " counter(page) " of " counter(pages);
     font-family: "Jost", sans-serif;
     font-weight: 300;
     font-size: 7.5pt;
