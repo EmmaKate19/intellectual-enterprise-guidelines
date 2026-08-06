@@ -4,7 +4,7 @@
 
 > **FILE ROLE:** Spoke module. Body of work for Stage 02 goes ONLY here. The supreme governing document of the Intellectual Enterprise.
 > **LOCATION:** GitHub repo `intellectual-enterprise-guidelines`.
-> **STATUS:** ◐ In progress — Audit Phase complete (06 Aug 2026); Founder review complete (v0.2.1, 06 Aug 2026); **Book I drafting unblocked**.
+> **STATUS:** ◐ In progress — Audit Phase complete (06 Aug 2026); Founder review complete (v0.2.1, 06 Aug 2026); **Book I v0.1 draft produced (07 Aug 2026) — awaiting Founder ratification**.
 
 ---
 
@@ -24,20 +24,20 @@ Elevate the founder's existing Master Context (00_DIGITAL_TWIN_CORE.md) into an 
 - [x] Founder reviews findings + answers §H open questions → drafting unblocked
 
 ### Constitution Draft — must define
-- [ ] Why the organisation exists
-- [ ] Purpose
-- [ ] Mission
-- [ ] Vision
-- [ ] Core values
-- [ ] Enterprise principles
-- [ ] Decision principles
-- [ ] Ethical boundaries
-- [ ] Stable Core vs Adaptive Edge (operationalised)
-- [ ] "On mission" — what ventures are aligned
-- [ ] "Off mission" — what ventures are misaligned
-- [ ] Constitutional hierarchy (parent/child document rule)
-- [ ] Relationship: Founder ↔ Organisation ↔ Ventures ↔ Assets
-- [ ] Enterprise Flywheel ratified (Observe→Understand→Prepare→Create→Teach→Refine→Observe)
+- [x] Why the organisation exists — §A Preamble; §C Purpose
+- [x] Purpose — §C.1 (verbatim carry from Founder Constitution)
+- [x] Mission — §C.3 (verbatim carry)
+- [x] Vision — §C.2 (verbatim carry)
+- [x] Core values — §D (verbatim structure: two centres, five orbiting, two prohibitions)
+- [x] Enterprise principles — §E.1 (eleven Design Principles by reference) + §E.2 (six elevated organisational principles)
+- [x] Decision principles — §F (Founder sole decision-maker, four-state lifecycle, two tracks, calibration test)
+- [x] Ethical boundaries — §G (two prohibitions + "first do no harm" + venture gates)
+- [x] Stable Core vs Adaptive Edge (operationalised) — §H (16-element Stable Core + 8-element Adaptive Edge + the rule)
+- [x] "On mission" — what ventures are aligned — §I.1 (Captain's Test + positive filter)
+- [x] "Off mission" — what ventures are misaligned — §I.2 (five exclusions) + §I.3 (the gate)
+- [x] Constitutional hierarchy (parent/child document rule) — §J (hierarchy + "expand, never contradict")
+- [x] Relationship: Founder ↔ Organisation ↔ Ventures ↔ Assets — §K (architecture hierarchy + four relationships)
+- [x] Enterprise Flywheel ratified (Observe→Understand→Prepare→Create→Teach→Refine→Observe) — §L (Established)
 
 ## 3. INPUTS
 
@@ -58,7 +58,7 @@ Elevate the founder's existing Master Context (00_DIGITAL_TWIN_CORE.md) into an 
 
 ## 5. DELIVERABLES (at close-out)
 
-- [ ] Master .md · [ ] PDF · [ ] Version history · [ ] Decision register · [ ] Glossary updates · [ ] Cross-reference index · [ ] Handover manifest → 00_GLOBAL_INDEX.md §6
+- [x] Master .md · [x] PDF · [x] Version history · [x] Decision register (§K of findings encoded in §A–§R) · [x] Glossary updates (§S.1) · [x] Cross-reference index (§S.2) · [ ] Handover manifest → 00_GLOBAL_INDEX.md §6 (pending Founder ratification)
 
 ## 6. VERSION HISTORY
 
@@ -68,6 +68,7 @@ Elevate the founder's existing Master Context (00_DIGITAL_TWIN_CORE.md) into an 
 | 0.1 (audit) | 06 Aug 2026 | Audit Phase complete — awaiting Founder review | Chief Enterprise Architect | Five-point audit findings produced (`deliverables/1.0_AUDIT_FINDINGS.*`). No Book I draft content yet. |
 | 0.2 (audit) | 06 Aug 2026 | Founder review complete — **Book I drafting unblocked** | Chief Enterprise Architect (Founder decisions) | All §H open questions resolved (§K of findings). D1–D6 recorded; E1 clarified (courses = transformation-focused, many foreseen); E2–E5 adopted; E6 executed as §5.4 change (gold/metallics deleted, commit `694c6b3`); F1–F7/F9/F10 approved; F8 clarified (enterprise IS profit-maximising within ethical constraints; §5.10 reconciliation noted). Flywheel ratified. Findings v0.2 committed (md `7b35abc3`, html `709ea0f4`, css `ed4cdada`, pdf `ddf241dc`). |
 | 0.2.1 (audit) | 06 Aug 2026 | F8 refinement — both/and framing | Chief Enterprise Architect (Founder clarification) | F8 refined: the enterprise is BOTH profit-maximising AND mission-sustaining within ethical constraints of "first do no harm." Both, not either/or. Architect recommendation refined (not overridden). §5.10 reconciliation: no tension — vehicle maximised, engine sustained. Removes ⚠ flag. Findings v0.2.1 committed (md `548dfa3a`, html `4519007a`, css `f13a5476`, pdf `e6923196`). |
+| 0.1 (draft) | 07 Aug 2026 | **Book I v0.1 draft produced — awaiting Founder ratification** | Chief Enterprise Architect | Initial Book I Constitution draft (10,568 words, 19 sections §A–§S, 32-page A4 PDF). All 14 Stage 02 checklist elements delivered. 10 immutable clusters carried verbatim (§§B–D, §G, §M, §Q, §R). 6 emerging principles elevated (§E.2). All §K founder decisions encoded constitutionally. F8 commercial frame encoded as both profit-maximising AND mission-sustaining with §5.10 reconciliation (§N). Energy-protection as constitutional gate (§M). AI accountability principle (§O). All six quality gates self-audited as Pass. Deliverables committed: md `17f59e36`, css `c9f12677`, html `6580e175`, pdf `7b21a4e1`. |
 
 ## 7. AUDIT LOG
 _(intermittent SuperNinja audits)_
@@ -86,6 +87,20 @@ _(intermittent SuperNinja audits)_
 **Effect:** Book I drafting is **unblocked**. One §5.4 Identity-layer change to the Immutable Founder Constitution executed (E.6). All other findings preserve the source unchanged. Flywheel ratified → Established.
 **GitHub commits:** `00_DIGITAL_TWIN_CORE.md` (`694c6b3`); `deliverables/1.0_AUDIT_FINDINGS.md` (`7b35abc3`); `.html` (`709ea0f4`); `.css` (`ed4cdada`); `.pdf` (`ddf241dc`).
 
+### 07 Aug 2026 — Book I Constitution Draft (internal, by Chief Enterprise Architect per Document 0.0 §15)
+**Subject:** Book I — Constitution of the Intellectual Enterprise, v0.1 Draft.
+**Method:** Drafted from ratified Audit Findings v0.2.1 §K (decision register). Carried 10 immutable clusters verbatim from the Founder Constitution; elevated 6 emerging organisational principles; encoded all §K founder decisions constitutionally; delivered 6 missing governance elements (§§F, G, H, I, J, K). Every statement labelled by evidence standard (Founder Truth / Architectural Principle / Professional Practice / Future Hypothesis) and stability tag (Immutable / Stable / Adaptive / Experimental).
+**Deliverables:** `deliverables/1.0_BOOK_I_CONSTITUTION.md` (10,568 words, 19 sections §A–§S) · `deliverables/1.0_BOOK_I_CONSTITUTION.html` (print-ready, Grounded Ethereal) · `deliverables/1.0_BOOK_I_CONSTITUTION.css` · `deliverables/1.0_BOOK_I_CONSTITUTION.pdf` (32-page A4, searchable).
+**Quality gates:** all six self-audited as Pass (Founder Alignment, Architectural Integrity, Operational Practicality, Future Resilience, AI Readiness, Elegance). Stage 02 checklist: 14/14 ✓ Delivered.
+**Status:** Draft v0.1 for Founder Review. **Not binding until the Founder ratifies through the Document 0.0 §5.4 process.**
+**GitHub commits:** md `17f59e36`, css `c9f12677`, html `6580e175`, pdf `7b21a4e1`. All on `main` branch, 07 Aug 2026.
+
 ## 8. HANDOVER OUT → Stage 03
-_(5-bullet manifest at close-out)_
+_(5-bullet manifest at close-out — pending Founder ratification of v0.1 draft)_
+
+1. **What was completed:** Book I — Constitution of the Intellectual Enterprise, v0.1 Draft. 19 sections (§A–§S), 10,568 words, 32-page A4 PDF (Grounded Ethereal, searchable). All 14 Stage 02 checklist elements delivered. 10 immutable clusters carried verbatim (§§B–D, §G prohibitions, §M, §Q, §R). 6 emerging principles elevated (§E.2). All §K founder decisions encoded. 6 missing governance elements delivered (§§F, G, H, I, J, K). Flywheel ratified as Established (§L). Energy-protection as constitutional gate (§M). F8 commercial frame encoded as both profit-maximising AND mission-sustaining with §5.10 reconciliation (§N). AI accountability principle (§O). All six quality gates Pass.
+2. **What was decided (encoded, pending ratification):** Two-constitution hierarchy (§B: Founder Constitution = identity-authoritative, Organisational Constitution = governance-authoritative). Founder is sole decision-maker (§F.1). Four-state lifecycle + two-track mechanism (§F.2–§F.3). Calibration test (§F.4). Stable Core / Adaptive Edge operationalised (§H). On-mission/off-mission definitions (§I). "Expand, never contradict" parent/child rule (§J). Architecture hierarchy Founder→Org→Capabilities→Ventures→Products (§K). Both/and commercial frame (§N). Organisation-outlives-founder principle (§E.2.6, §P.2). Protected lexicon (§Q).
+3. **What is unresolved / deferred:** Founder ratification of v0.1 draft (required before binding). Succession mechanics deferred to Book IX. Operational ethics to Books III/VIII. AI accountability operationalisation to Book VIII. Commercial model detail to Book V. Venture framework to Book VII. Brand architecture to Book VI. These are intentionally deferred — the Constitution defines principles, not mechanics.
+4. **What the next stage must know:** Book I v0.1 is the supreme governing document once ratified. Stage 03 (Book II — Enterprise Architecture) must expand the Constitution without contradiction (§J.2). The Stable Core (§H.1) is binding; the Adaptive Edge (§H.2) is experimental. All downstream Books reference the Constitution by stable section ID (§J.1). The Flywheel (§L) is the operating rhythm. Energy-protection (§M) binds every venture, role, system, and AI agent. The calibration test (§F.4) applies to every output.
+5. **GitHub commit reference:** `deliverables/1.0_BOOK_I_CONSTITUTION.md` (`17f59e36`), `.css` (`c9f12677`), `.html` (`6580e175`), `.pdf` (`7b21a4e1`), `02_STAGE_CONSTITUTION.md` (this commit), `00_GLOBAL_INDEX.md` (this commit). All on `main` branch, 07 Aug 2026.
 
