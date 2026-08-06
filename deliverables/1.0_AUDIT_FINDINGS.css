@@ -1,0 +1,281 @@
+/* 1.0_AUDIT_FINDINGS.css — Grounded Ethereal, print-ready A4
+   Palette: taupe #a29386 · greige #c5bcb1 · warm grey #b4ada8 · crisp white #f6f4f2 · black #141414 · soft blush #e3cac7
+   Fonts: Fraunces (headings) · Parisienne (script, blush) · Jost Light (body)
+   NO gold, NO metallics.
+*/
+
+@page {
+  size: A4;
+  margin: 22mm 20mm 20mm 20mm;
+  @bottom-center {
+    content: "Book I — Constitution · Audit Phase — Findings   ·   v0.1   ·   page " counter(page) " of " counter(pages);
+    font-family: "Jost", sans-serif;
+    font-weight: 300;
+    font-size: 7.5pt;
+    color: #b4ada8;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+  }
+}
+
+@page :first {
+  margin-top: 26mm;
+  @bottom-center { content: ""; }
+}
+
+:root {
+  --taupe: #a29386;
+  --greige: #c5bcb1;
+  --warm-grey: #b4ada8;
+  --white: #f6f4f2;
+  --black: #141414;
+  --blush: #e3cac7;
+  --ink: #2b2724;
+  --rule: #d8d2cb;
+}
+
+* { box-sizing: border-box; }
+
+html { font-size: 10.5pt; }
+
+body {
+  font-family: "Jost", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 300;
+  color: var(--ink);
+  background: var(--white);
+  line-height: 1.62;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ---------- Typography ---------- */
+h1, h2, h3, h4 {
+  font-family: "Fraunces", "Georgia", serif;
+  font-weight: 400;
+  color: var(--black);
+  line-height: 1.22;
+  margin: 0;
+}
+
+h1 {
+  font-size: 27pt;
+  font-weight: 300;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-size: 16pt;
+  margin-top: 1.7em;
+  padding-bottom: 0.28em;
+  border-bottom: 0.5pt solid var(--rule);
+}
+
+h3 {
+  font-size: 12pt;
+  margin-top: 1.35em;
+  color: var(--taupe);
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 10.5pt;
+  margin-top: 1em;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+p { margin: 0.55em 0; }
+
+.script {
+  font-family: "Parisienne", cursive;
+  color: var(--blush);
+  font-weight: 400;
+}
+
+.label-eyebrow {
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  font-size: 7.5pt;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--warm-grey);
+}
+
+/* ---------- Cover / header ---------- */
+.cover {
+  text-align: left;
+  padding: 6mm 0 4mm 0;
+  border-bottom: 0;
+}
+.cover .eyebrow {
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  font-size: 8pt;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  color: var(--taupe);
+  margin-bottom: 7mm;
+}
+.cover h1 { margin-bottom: 2mm; }
+.cover .subtitle {
+  font-family: "Parisienne", cursive;
+  color: var(--blush);
+  font-size: 17pt;
+  margin-top: 1mm;
+}
+.cover .meta {
+  margin-top: 9mm;
+  font-size: 8.5pt;
+  color: var(--warm-grey);
+  letter-spacing: 0.04em;
+}
+.cover .meta span { display: inline-block; margin-right: 7mm; }
+.cover .meta strong { color: var(--ink); font-weight: 400; }
+
+/* ---------- Metadata table ---------- */
+table.meta {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 6mm 0 4mm 0;
+  font-size: 8.6pt;
+}
+table.meta td {
+  padding: 2.6mm 3mm;
+  border-bottom: 0.4pt solid var(--rule);
+  vertical-align: top;
+}
+table.meta td:first-child {
+  width: 30%;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 7.4pt;
+  color: var(--taupe);
+  padding-top: 3.2mm;
+}
+table.meta td:last-child { color: var(--ink); }
+
+/* ---------- Evidence / blockquote ---------- */
+blockquote, .note {
+  margin: 0.7em 0;
+  padding: 0.7em 1.1em;
+  border-left: 2pt solid var(--blush);
+  background: #fbf8f6;
+  font-size: 9.4pt;
+  color: #4a4541;
+  border-radius: 0 2pt 2pt 0;
+}
+blockquote p, .note p { margin: 0.3em 0; }
+.ev {
+  display: block;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 7.4pt;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--taupe);
+  margin-bottom: 0.4em;
+}
+
+/* ---------- Inline evidence / status tags ---------- */
+.tag {
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 7.2pt;
+  letter-spacing: 0.1em;
+  padding: 0.5pt 4pt;
+  border-radius: 2pt;
+  white-space: nowrap;
+}
+.t-ft { background: #efe7e2; color: #6b5d52; }
+.t-ap { background: #e7e9ea; color: #4a5560; }
+.t-pp { background: #e8e5df; color: #5d5b52; }
+.t-fh { background: #f0e6e4; color: #7a5a55; }
+.t-st { background: var(--greige); color: #3a3530; }
+.t-im { background: var(--taupe); color: var(--white); }
+.t-ad { background: var(--warm-grey); color: var(--white); }
+.t-es { background: #e9e6df; color: #4f4a3f; }
+.t-pr { background: #f0e6e4; color: #7a5a55; }
+.t-un { background: #ecd9d6; color: #6e4a47; }
+
+strong.evidence { color: var(--taupe); font-weight: 500; }
+
+/* ---------- Lists ---------- */
+ul { margin: 0.4em 0; padding-left: 5mm; }
+li { margin: 0.28em 0; }
+li::marker { color: var(--blush); }
+
+/* ---------- Tables (content) ---------- */
+table.grid {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.8em 0;
+  font-size: 8.4pt;
+}
+table.grid th {
+  text-align: left;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 7.2pt;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--taupe);
+  border-bottom: 0.6pt solid var(--taupe);
+  padding: 2.6mm 2.4mm;
+}
+table.grid td {
+  border-bottom: 0.4pt solid var(--rule);
+  padding: 2.4mm 2.4mm;
+  vertical-align: top;
+  color: var(--ink);
+}
+table.grid tr:last-child td { border-bottom: 0.6pt solid var(--taupe); }
+
+/* ---------- Code (flywheel) ---------- */
+pre {
+  font-family: "Jost", monospace;
+  font-weight: 300;
+  font-size: 9pt;
+  background: #fbf8f6;
+  border: 0.4pt solid var(--rule);
+  border-left: 2pt solid var(--taupe);
+  padding: 3mm 5mm;
+  margin: 0.7em 0;
+  border-radius: 0 2pt 2pt 0;
+  color: var(--black);
+  letter-spacing: 0.04em;
+  white-space: pre-wrap;
+}
+
+/* ---------- Page-break control ---------- */
+h2 { page-break-after: avoid; }
+h3, h4 { page-break-after: avoid; }
+table, blockquote, pre, .note { page-break-inside: avoid; }
+.section { page-break-inside: auto; }
+hr { border: 0; border-top: 0.4pt solid var(--rule); margin: 1.6em 0; }
+
+/* ---------- Footer note ---------- */
+.foot {
+  margin-top: 10mm;
+  padding-top: 4mm;
+  border-top: 0.6pt solid var(--taupe);
+  font-family: "Parisienne", cursive;
+  color: var(--blush);
+  font-size: 12pt;
+  text-align: center;
+}
+
+/* ---------- Screen niceties (non-print) ---------- */
+@media screen {
+  body { background: #ece8e3; padding: 0; }
+  .page {
+    max-width: 210mm;
+    min-height: 297mm;
+    margin: 14mm auto;
+    background: var(--white);
+    padding: 22mm 20mm 20mm 20mm;
+    box-shadow: 0 2mm 10mm rgba(20,20,20,0.12);
+  }
+  @page { margin: 0; }
+}
