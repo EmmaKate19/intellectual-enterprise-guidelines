@@ -24,7 +24,7 @@
 - **Capabilities outlive businesses.** Organise around capabilities, not companies.
 - **Knowledge exists once.** Everything derives from it. Business Brain, not Second Brain.
 - **Stable Core vs Adaptive Edge:** Identity/Purpose/Mission/Values/Philosophy/Decision-principles are protected (Immutable/Stable). Technology/AI/Products/Marketing/Companies/Platforms/Revenue are experimental (Adaptive/Experimental).
-- **Enterprise Flywheel (proposed — ratify in Stage 02):** Observe → Understand → Prepare → Create → Teach → Refine → Observe.
+- **Enterprise Flywheel (ratified 06 Aug 2026, Stage 02 v0.2):** Observe → Understand → Prepare → Create → Teach → Refine → Observe.
 - **Guiding philosophy:** "Create knowledge that transforms people, and build systems that allow that transformation to scale without losing its integrity."
 - **Founder identity source:** 00_DIGITAL_TWIN_CORE.md (immutable). Never rewrite/reinterpret founder identity.
 
@@ -37,7 +37,7 @@ Sequence is **fixed**. Each stage = its own chat. Lower stages expand higher sta
 | # | Stage file | Maps to Blueprint | Status | Chat |
 |---|---|---|---|---|
 | 01 | 01_STAGE_CHARTER.md | Document 0.0 — Blueprint Charter & Editorial Standard | ☑ Complete (v0.0.1, founder-signed 06 Aug 2026) | — |
-| 02 | 02_STAGE_CONSTITUTION.md | Book I — Constitution (audit phase first, then draft) | ◐ In progress — Audit Phase complete, awaiting Founder review | — |
+| 02 | 02_STAGE_CONSTITUTION.md | Book I — Constitution (audit phase first, then draft) | ◐ In progress — Audit complete, Founder review complete, drafting unblocked | — |
 | 03 | 03_STAGE_ENTERPRISE_ARCH.md | Book II — Enterprise Architecture | ☐ Not started | — |
 | 04 | 04_STAGE_GOVERNANCE.md | Book III — Governance | ☐ Not started | — |
 | 05 | 05_STAGE_KNOWLEDGE_ARCH.md | Book IV — Knowledge Architecture | ☐ Not started | — |
@@ -89,7 +89,12 @@ Sequence is **fixed**. Each stage = its own chat. Lower stages expand higher sta
 3. **What is unresolved / deferred:** Enterprise Flywheel phrasing (brief §5.9/§17) — flagged for Book I audit, not pre-empted. Whether a more authoritative version of the Founder Constitution exists — assumption logged that the comprehensive master is complete. Book I vocabulary additions (e.g., organisational-scope "Constitution" definition) deferred to Book I via Adaptive update.
 4. **What the next stage must know:** Next is **Book I Audit Phase** — *not* drafting. Run a five-point audit of the Founder Constitution (immutable principles · emerging organisational principles · areas requiring clarification · potential contradictions · missing governance elements) → produce a findings document → founder reviews → *then* drafting begins. Audit subject: `EK PB - Digital twin (Master document), Comprehensive.md` (in-project, read). Audit is reading-and-analysis, not a drafting sprint — design delivery to protect founder energy (Principle 7).
 5. **GitHub commit reference:** Commit `fad240a` pushed to `main` branch of `intellectual-enterprise-guidelines` repo (verified via API, 06 Aug 2026). Updates: `01_STAGE_CHARTER.md` (status → ☑ Complete, handover manifest), `00_GLOBAL_INDEX.md` (§6 manifest), `deliverables/` (master .md, 9-page PDF, HTML+CSS).
-**Stage 02 — Constitution:** _(Audit Phase complete 06 Aug 2026; awaiting Founder review before drafting)_
+**Stage 02 — Constitution:**
+1. **What was completed:** Book I Audit Phase — five-point audit of the Founder Constitution (`EK PB - Digital twin (Master document), Comprehensive.md`). Findings document produced: `deliverables/1.0_AUDIT_FINDINGS.md` v0.2 (+ print-ready HTML+CSS, 19-page searchable A4 PDF, Grounded Ethereal design). Founder reviewed v0.1 and answered every §H open question (all decisions in §K). **Book I drafting is unblocked.**
+2. **What was decided:** D1 Flywheel ratified verbatim (Observe→Understand→Prepare→Create→Teach→Refine→Observe, status → Established); D2 two-constitution hierarchy approved; D3 Seven-Point Convergence = founder-only (org amplifies); D4 off-mission exclusions to be derived; D5 freedom = dual-layer (personal + org optionality); D6 lexicon = protected founder-owned asset. E1 "not *just another* course" — transformation-focused, founder foresees many courses; E2–E5 adopted; E6 founder instruction: DELETE "no gold or metallics" from all .md files (§5.4 Identity-layer change CHG-2026-08-06-001 executed, commit `694c6b3`). F1–F7/F9/F10 approved; F8 clarified — enterprise IS profit-maximising within ethical constraints of "first do no harm" (architect recommendation overridden; §5.10 reconciliation: profit is a maximised vehicle, transformation remains the engine).
+3. **What is unresolved / deferred:** F8 §5.10 reconciliation note flagged for Book I (⚠ Book I must state the reconciliation explicitly; no Brief change required unless founder wants §5.10 reworded). Off-mission exclusions (D.4) to be drafted in Book I. Succession mechanics deferred to Book IX. Operational ethics to Book III/VIII. AI accountability operationalisation to Book VIII.
+4. **What the next stage must know:** Book I drafting is **unblocked** — all audit inputs resolved. Draft the Organisational Constitution using §K of the findings as the decision register. Carry 10 immutable clusters verbatim (§B); elevate 6 emerging principles (§C, Flywheel central); encode all §K decisions constitutionally. The Flywheel is Established (not Proposed). The "no gold or metallics" restriction is gone (§5.4 change); Adaptive Edge may explore metallics. F8: encode profit-maximising within ethical constraints + state the §5.10 reconciliation. Energy-protection (F.9) is a constitutional gate binding every venture/role/system/AI agent.
+5. **GitHub commit reference:** `00_DIGITAL_TWIN_CORE.md` (`694c6b3`); `deliverables/1.0_AUDIT_FINDINGS.md` (`7b35abc3`); `.html` (`709ea0f4`); `.css` (`ed4cdada`); `.pdf` (`ddf241dc`); `02_STAGE_CONSTITUTION.md` (`09c39d34`); `00_GLOBAL_INDEX.md` (this commit). All on `main` branch, 06 Aug 2026.
 **Stage 03 — Enterprise Architecture:** _(empty)_
 **Stage 04 — Governance:** _(empty)_
 **Stage 05 — Knowledge Architecture:** _(empty)_
