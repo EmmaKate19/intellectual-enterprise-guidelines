@@ -37,7 +37,7 @@ Sequence is **fixed**. Each stage = its own chat. Lower stages expand higher sta
 | # | Stage file | Maps to Blueprint | Status | Chat |
 |---|---|---|---|---|
 | 01 | 01_STAGE_CHARTER.md | Document 0.0 — Blueprint Charter & Editorial Standard | ☑ Complete (v0.0.1, founder-signed 06 Aug 2026) | — |
-| 02 | 02_STAGE_CONSTITUTION.md | Book I — Constitution (audit phase first, then draft) | ☐ Not started | — |
+| 02 | 02_STAGE_CONSTITUTION.md | Book I — Constitution (audit phase first, then draft) | ◐ In progress — Audit Phase complete, awaiting Founder review | — |
 | 03 | 03_STAGE_ENTERPRISE_ARCH.md | Book II — Enterprise Architecture | ☐ Not started | — |
 | 04 | 04_STAGE_GOVERNANCE.md | Book III — Governance | ☐ Not started | — |
 | 05 | 05_STAGE_KNOWLEDGE_ARCH.md | Book IV — Knowledge Architecture | ☐ Not started | — |
@@ -89,7 +89,7 @@ Sequence is **fixed**. Each stage = its own chat. Lower stages expand higher sta
 3. **What is unresolved / deferred:** Enterprise Flywheel phrasing (brief §5.9/§17) — flagged for Book I audit, not pre-empted. Whether a more authoritative version of the Founder Constitution exists — assumption logged that the comprehensive master is complete. Book I vocabulary additions (e.g., organisational-scope "Constitution" definition) deferred to Book I via Adaptive update.
 4. **What the next stage must know:** Next is **Book I Audit Phase** — *not* drafting. Run a five-point audit of the Founder Constitution (immutable principles · emerging organisational principles · areas requiring clarification · potential contradictions · missing governance elements) → produce a findings document → founder reviews → *then* drafting begins. Audit subject: `EK PB - Digital twin (Master document), Comprehensive.md` (in-project, read). Audit is reading-and-analysis, not a drafting sprint — design delivery to protect founder energy (Principle 7).
 5. **GitHub commit reference:** Commit `fad240a` pushed to `main` branch of `intellectual-enterprise-guidelines` repo (verified via API, 06 Aug 2026). Updates: `01_STAGE_CHARTER.md` (status → ☑ Complete, handover manifest), `00_GLOBAL_INDEX.md` (§6 manifest), `deliverables/` (master .md, 9-page PDF, HTML+CSS).
-**Stage 02 — Constitution:** _(empty)_
+**Stage 02 — Constitution:** _(Audit Phase complete 06 Aug 2026; awaiting Founder review before drafting)_
 **Stage 03 — Enterprise Architecture:** _(empty)_
 **Stage 04 — Governance:** _(empty)_
 **Stage 05 — Knowledge Architecture:** _(empty)_
