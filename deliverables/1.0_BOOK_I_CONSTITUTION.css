@@ -1,14 +1,14 @@
 /* 1.0_BOOK_I_CONSTITUTION.css — Grounded Ethereal, print-ready A4
    Palette: taupe #a29386 · greige #c5bcb1 · warm grey #b4ada8 · crisp white #f6f4f2 · black #141414 · soft blush #e3cac7
    Fonts: Fraunces (headings) · Parisienne (script, blush) · Jost Light (body)
-   Book I — Constitution of the Intellectual Enterprise, v0.1 Draft.
+   Book I — Constitution of the Intellectual Enterprise, v1.0 Ratified.
 */
 
 @page {
   size: A4;
   margin: 22mm 20mm 20mm 20mm;
   @bottom-center {
-    content: "Book I — Constitution of the Intellectual Enterprise   ·   v0.1 Draft   ·   page " counter(page) " of " counter(pages);
+    content: "Book I — Constitution of the Intellectual Enterprise   ·   v1.0 Ratified   ·   page " counter(page) " of " counter(pages);
     font-family: "Jost", sans-serif;
     font-weight: 300;
     font-size: 7.5pt;
