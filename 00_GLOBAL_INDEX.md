@@ -37,7 +37,7 @@ Sequence is **fixed**. Each stage = its own chat. Lower stages expand higher sta
 | # | Stage file | Maps to Blueprint | Status | Chat |
 |---|---|---|---|---|
 | 01 | 01_STAGE_CHARTER.md | Document 0.0 — Blueprint Charter & Editorial Standard | ☑ Complete (v0.0.1, founder-signed 06 Aug 2026) | — |
-| 02 | 02_STAGE_CONSTITUTION.md | Book I — Constitution (audit phase first, then draft) | ◐ In progress — v0.1 draft produced (07 Aug 2026), awaiting Founder ratification | — |
+| 02 | 02_STAGE_CONSTITUTION.md | Book I — Constitution (audit phase first, then draft) | ☑ Complete (v1.0 Ratified, 07 Aug 2026) | — |
 | 03 | 03_STAGE_ENTERPRISE_ARCH.md | Book II — Enterprise Architecture | ☐ Not started | — |
 | 04 | 04_STAGE_GOVERNANCE.md | Book III — Governance | ☐ Not started | — |
 | 05 | 05_STAGE_KNOWLEDGE_ARCH.md | Book IV — Knowledge Architecture | ☐ Not started | — |
@@ -85,11 +85,11 @@ Sequence is **fixed**. Each stage = its own chat. Lower stages expand higher sta
 
 **Stage 01 — Charter:** Document 0.0 v0.0.1 — Blueprint Charter & Editorial Standard (founder-signed, 06 Aug 2026). 16 sections, 9-page PDF. Five decisions ratified (eleven Design Principles, four-state change lifecycle, Knowledge Standard, stable section IDs, formal-institutional register). Full detail in `01_STAGE_CHARTER.md`. Commit `fad240a`.
 **Stage 02 — Constitution:**
-1. **What was completed:** Book I Audit Phase (five-point audit → findings v0.2.1, Founder reviewed all §K decisions) **then** Book I v0.1 Draft (19 sections §A–§S, 10,568 words, 32-page A4 PDF). All 14 checklist elements delivered; all six quality gates Pass. Full detail in `02_STAGE_CONSTITUTION.md`. Deliverables: `deliverables/1.0_BOOK_I_CONSTITUTION.*` + `deliverables/1.0_AUDIT_FINDINGS.*`.
+1. **What was completed:** Book I Audit Phase (five-point audit → findings v0.2.1, Founder reviewed all §K decisions) **then** Book I v1.0 Ratified (19 sections §A–§S, 10,568 words, 33-page A4 PDF). Founder ratified as-is, no changes. All 14 checklist elements delivered; all six quality gates Pass. Full detail in `02_STAGE_CONSTITUTION.md`. Deliverables: `deliverables/1.0_BOOK_I_CONSTITUTION.*` + `deliverables/1.0_AUDIT_FINDINGS.*`.
 2. **What was decided:** Flywheel ratified (Established, §L). Two-constitution hierarchy (§B). Both profit-maximising AND mission-sustaining within ethical constraints (§N, §5.10 reconciliation — no tension). Energy-protection = constitutional gate (§M). Founder sole decision-maker (§F.1). Stable Core/Adaptive Edge operationalised (§H). "Expand, never contradict" rule (§J). Lexicon = protected founder-owned asset (§Q). AI accountability principle (§O). "No gold or metallics" deleted (§5.4 change, commit `694c6b3`).
-3. **What is unresolved / deferred:** Founder ratification of v0.1 draft (required before binding). Succession → Book IX. Operational ethics → Books III/VIII. AI accountability operationalisation → Book VIII. Commercial model → Book V. Venture framework → Book VII. Brand architecture → Book VI.
-4. **What the next stage must know:** Book I v0.1 is the supreme governing document once ratified. Stage 03 (Book II — Enterprise Architecture) must expand without contradiction (§J.2). Stable Core (§H.1) binding; Adaptive Edge (§H.2) experimental. Energy-protection (§M) binds every venture, role, system, AI agent. Calibration test (§F.4) applies to every output. Adaptive Edge may explore metallics.
-5. **GitHub commits:** Audit: `548dfa3a` (findings md), `694c6b3` (Digital Twin). Draft: `17f59e36` (md), `c9f12677` (css), `6580e175` (html), `7b21a4e1` (pdf), + `02_STAGE_CONSTITUTION.md` & `00_GLOBAL_INDEX.md` (this commit). All on `main`, 06–07 Aug 2026.
+3. **What is unresolved / deferred:** Succession → Book IX. Operational ethics → Books III/VIII. AI accountability operationalisation → Book VIII. Commercial model → Book V. Venture framework → Book VII. Brand architecture → Book VI. (The Constitution itself is ratified and binding — these are intentionally deferred to downstream Books.)
+4. **What the next stage must know:** Book I v1.0 is the **binding** supreme governing document. Stage 03 (Book II — Enterprise Architecture) must expand without contradiction (§J.2). Stable Core (§H.1) binding; Adaptive Edge (§H.2) experimental. Energy-protection (§M) binds every venture, role, system, AI agent. Calibration test (§F.4) applies to every output. Adaptive Edge may explore metallics.
+5. **GitHub commits:** Audit: `548dfa3a` (findings md), `694c6b3` (Digital Twin). Draft v0.1: `17f59e36` (md), `c9f12677` (css), `6580e175` (html), `7b21a4e1` (pdf). Ratified v1.0: `22905630` (md), `83aee6ad` (css), `7c51b315` (html), `7a6f0cff` (pdf), + `02_STAGE_CONSTITUTION.md` & `00_GLOBAL_INDEX.md` (this commit). All on `main`, 06–07 Aug 2026.
 **Stage 03 — Enterprise Architecture:** _(empty)_
 **Stage 04 — Governance:** _(empty)_
 **Stage 05 — Knowledge Architecture:** _(empty)_
