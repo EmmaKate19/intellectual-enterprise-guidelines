@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book II — Enterprise Architecture · v1.0 Ratified</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300&family=Jost:wght@300;400;500&family=Parisienne&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="2.0_BOOK_II_ENTERPRISE_ARCH.css">
+<script src="https://sites.super.myninja.ai/_assets/ninja-daytona-script.js"></script>
+</head>
+<body>
+<div class="page">
+
+<!-- ============ COVER ============ -->
+<section class="cover">
+  <div class="eyebrow">Intellectual Enterprise Guidelines · Book II</div>
+  <h1>Enterprise Architecture</h1>
+  <div class="subtitle">the capability catalogue</div>
+  <div class="tagline">What can exist inside the organisation — nine enduring capabilities, their outputs, and the sequence that places them before any company.</div>
+  <div class="meta">
+    <span><strong>Version</strong> 1.0</span>
+    <span><strong>Date</strong> 07 Aug 2026</span>
+    <span><strong>Status</strong> Ratified — Binding</span>
+  </div>
+  <hr class="cover-rule">
+</section>
+
+<!-- ============ §0 HEADER ============ -->
+<table class="meta">
+  <tr><td>Project</td><td>Intellectual Enterprise Guidelines (Master Document)</td></tr>
+  <tr><td>Document</td><td>Book II — Enterprise Architecture (the capability catalogue)</td></tr>
+  <tr><td>Parent</td><td>Book I — Constitution of the Intellectual Enterprise, v1.0 Ratified (07 Aug 2026)</td></tr>
+  <tr><td>Authority</td><td>Governance-authoritative within the domain of <em>what may exist inside the organisation</em>. Expands Constitution §K; never contradicts it (§J.2).</td></tr>
+  <tr><td>Mutability</td><td>Stable (ratified capability set + sequence); Adaptive (output mappings, illustrative ventures)</td></tr>
+  <tr><td>Audience</td><td>Founder · future AI agents · future collaborators · future generations</td></tr>
+  <tr><td>Integrity rule</td><td>No section may contradict Book I. Tensions resolve upward via Document 0.0 §5.4 (Constitution §J.1).</td></tr>
+  <tr><td>Version / Date</td><td>0.1 · 07 Aug 2026</td></tr>
+  <tr><td>Status</td><td>Ratified — Binding. <strong>Founder ratified as-is through Document 0.0 §5.4 on 07 Aug 2026.</strong></td></tr>
+</table>
+
+<p><span class="ev">Evidence &amp; stability convention</span> Load-bearing statements carry an inline <em>Evidence label: X.</em> tag (Document 0.0 §7: Founder Truth · Architectural Principle · Professional Practice · Future Hypothesis). Every section header states its stability (Document 0.0 §8: Immutable · Stable · Adaptive · Experimental).</p>
+
+<hr>
+
+<!-- ============ §A PREAMBLE ============ -->
+<h2>§A. Preamble — What This Book Does, and What It Deliberately Does Not</h2>
+<p><span class="tag t-st">Stable</span></p>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Brief §8.3 Book II; Constitution §K.1, §J.2.</blockquote>
+
+<p>This Book answers a single question: <strong>what can exist inside the organisation?</strong> The answer is <em>capabilities</em> — enduring organisational functions that outlive the businesses that temporarily express them (Constitution §K.2; Design Principle 3). This Book does not name companies. It does not design legal entities. It does not commit to a product roadmap. It does what the Constitution directed: it catalogues the capabilities, maps each to the outputs it can produce, and affirms the sequence in which the organisation is built before any company is.</p>
+
+<p>The discipline of this Book is restraint. The temptation, when designing an enterprise, is to leap to the ventures — to name the clinic, the course, the supplement, the app — because ventures are concrete and capabilities are abstract. The architecture inverts this. Capabilities are designed first because they are what endures; ventures are designed later because they are what experiments (Constitution §H.2, §K.2). A venture that fails closes; the capability it expressed finds a new vehicle. This is the structural reason the organisation can experiment freely at the edge without losing its centre (Constitution §H.3).</p>
+
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Constitution §K.2: "When a venture closes, the capability it expressed persists and finds a new vehicle."</blockquote>
+
+<p>This Book therefore defines the <em>possibility space</em> of the enterprise — the set of enduring functions the organisation is organised around — and explicitly defers the <em>populating</em> of that space (which ventures, which products, which companies) to downstream Books: the Venture Framework (Book VII), the Operating System (Book V), and Governance (Book III).</p>
+
+<!-- ============ §B ============ -->
+<h2>§B. The One Rule This Book Inherits</h2>
+<p><span class="tag t-st">Stable</span></p>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Constitution §J.2.</blockquote>
+
+<p>Book II expands the Constitution; it does not contradict it. The single inherited rule, restated as the governing constraint of this entire document:</p>
+
+<blockquote class="founder-quote">A lower document may expand a higher document; it may never contradict it. If a lower document appears to require contradicting a higher one, the contradiction is resolved upward — the higher document is amended through Document 0.0 §5.4, or the lower document is redesigned. Contradiction is never silently absorbed downward.
+<span class="attribution">— Constitution §J.1–§J.2</span></blockquote>
+
+<p>Every capability, every mapping, and every sequence in this Book is testable against that rule. None of them amend the Constitution; all of them fill the space the Constitution left open ("catalogued in Book II," §K.1).</p>
+
+<!-- ============ §C SCOPE ============ -->
+<h2>§C. Scope — What This Book Defines and What It Defers</h2>
+<p><span class="tag t-st">Stable</span></p>
+
+<h3>C.1 In scope (this Book defines)</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Stage 03 §2.</blockquote>
+<ul>
+  <li>What can exist inside the organisation — the capability catalogue (§D).</li>
+  <li>The capability→output mapping — what each capability can produce (§E).</li>
+  <li>The relationships <em>among</em> capabilities — how they interlock and feed one another (§F).</li>
+  <li>The organisation-before-companies sequence, affirmed and made concrete (§G).</li>
+  <li>The supersession of the 5-division model, confirmed and recorded (§H).</li>
+  <li>How the capability layer sits within the Constitution's architecture hierarchy (§I).</li>
+  <li>How the constitutional gates apply to capabilities (§J).</li>
+  <li>Glossary additions, cross-references, decision register, and handover (§§K–P).</li>
+</ul>
+
+<h3>C.2 Out of scope (this Book defers — by design)</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Brief §5.5; Constitution §J.3; Stage 03 §4.</blockquote>
+<ul>
+  <li><strong>Specific ventures, products, and companies</strong> → Book VII. "No businesses yet — only capabilities" is preserved.</li>
+  <li><strong>Legal/tax/entity structure</strong> → professional advice after Books II &amp; III (Brief §5.5). This Book does not pre-empt it.</li>
+  <li><strong>Governance structures, decision frameworks, operational ethics</strong> → Book III.</li>
+  <li><strong>Knowledge systems, the Business Brain</strong> → Book IV. This Book identifies which capabilities <em>consume</em> knowledge; Book IV designs how knowledge <em>exists once</em>.</li>
+  <li><strong>The Business OS, SOPs, AI agent design</strong> → Books V and VIII.</li>
+  <li><strong>Brand architecture, venture/product branding, lexicon licencing</strong> → Book VI.</li>
+  <li><strong>Succession, charity structure, generational continuity</strong> → Book IX.</li>
+</ul>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Constitution §P.3, §J.3. This deference is not avoidance. Each deferred item is named so no downstream Book is surprised by its assignment, and so this Book does not silently absorb work that belongs elsewhere (Document 0.0 §4.2: "remove before adding").</blockquote>
+
+<!-- ============ §D CAPABILITY CATALOGUE ============ -->
+<h2>§D. The Capability Catalogue</h2>
+<p><span class="tag t-st">Stable (set)</span> <span class="tag t-ad">Adaptive (definitions)</span></p>
+<blockquote><span class="ev">Evidence label: Architectural Principle + Founder Truth</span> Brief §5.3; Constitution §K.1; Document 0.0 §9 "Capability".</blockquote>
+
+<h3>D.1 What a capability is</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Document 0.0 §9; Brief §5.3; Constitution §K.2.</blockquote>
+<p>A <strong>capability</strong> is an enduring organisational function — a durable <em>ability to do something</em> — that outlives the businesses that temporarily express it. A capability is not a department, not a company, not a product line. It is the <em>competence</em> the organisation holds. When a venture closes, the capability it expressed persists and is re-expressed through a new vehicle (Constitution §K.2). Capabilities are the unit of organisational permanence; ventures are the unit of organisational experimentation.</p>
+<p>The architecture hierarchy (Constitution §K.1) places capabilities directly beneath the Organisation and directly above Ventures. This is deliberate: it is the layer where permanence meets expression.</p>
+
+<h3>D.2 The ratified capability set</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle (ratification) + Founder Truth (source list)</span> Brief §5.3 Proposed list; Stage 03 §2; Constitution §K.1.</blockquote>
+<p>The Brief (§5.3) proposed nine capabilities and marked them "Proposed — to be ratified in Book II." This Book ratifies the set, with one structural clarification (Clinical, §D.4; Investment, §D.5 and §E.8). The ratified capability catalogue of the Intellectual Enterprise is:</p>
+
+<table class="grid">
+  <thead><tr><th>#</th><th>Capability</th><th>One-line definition</th><th>Stability</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td><strong>Research</strong></td><td>The ability to investigate, validate, and synthesise knowledge at root-cause depth.</td><td>Stable</td></tr>
+    <tr><td>2</td><td><strong>Education</strong></td><td>The ability to transmit transformational knowledge and build capacity in others.</td><td>Stable</td></tr>
+    <tr><td>3</td><td><strong>Technology</strong></td><td>The ability to build and operate software, AI agents, automations, and digital systems.</td><td>Stable</td></tr>
+    <tr><td>4</td><td><strong>Clinical</strong></td><td>The ability to apply health knowledge to individual cases — consultations, protocols, practitioner craft.</td><td>Stable</td></tr>
+    <tr><td>5</td><td><strong>Publishing</strong></td><td>The ability to produce durable written works — books, frameworks, workbooks, journals.</td><td>Stable</td></tr>
+    <tr><td>6</td><td><strong>Media</strong></td><td>The ability to produce and distribute spoken/visual content — podcast, video, newsletter, speaking.</td><td>Stable</td></tr>
+    <tr><td>7</td><td><strong>Commerce</strong></td><td>The ability to design, source, and sell physical/digital goods — supplements, tools, merchandise.</td><td>Stable</td></tr>
+    <tr><td>8</td><td><strong>Investment</strong></td><td>The ability to allocate capital — into the enterprise's own ventures and, selectively, into aligned external ones.</td><td>Stable (intent); Adaptive (mechanics deferred)</td></tr>
+    <tr><td>9</td><td><strong>Impact</strong></td><td>The ability to generate public good beyond the market — charity, scholarships, advocacy, access.</td><td>Stable</td></tr>
+  </tbody>
+</table>
+
+<blockquote>
+<span class="ev">Decision audit — DEC-BII-001: ratify the nine-capability set</span>
+<strong>Why?</strong> Constitution §K.1 directs Book II to catalogue capabilities; Brief §5.3 proposed this set; the founder's expressed venture intentions map onto it without residue. <strong>Alternatives:</strong> (a) a coarser 5-capability set (collapsing Publishing+Media, Clinical+Education) — rejected: obscures distinct Flywheel expressions and output types; (b) a finer 12+ set (splitting Technology into Software/AI/Data) — rejected as premature; Book VIII designs the AI sub-architecture, and over-specifying now reduces optionality (Design Principle 9). <strong>Why this?</strong> Nine is the minimum sufficient set that (i) covers every expressed venture interest, (ii) gives each a distinct Flywheel expression (§F), and (iii) does not pre-empt downstream Books. <strong>Assumptions:</strong> the founder's venture interests are stable in <em>kind</em> even as they evolve in <em>form</em>. <strong>Risks:</strong> a capability may later prove to be two, or two may prove one — mitigated by Adaptive definitions + §5.4. <strong>When it no longer serves:</strong> if the work converges below four enduring functions or diverges above twelve, the catalogue is re-ratified.
+</blockquote>
+
+<h3>D.3 Why these nine — and not the superseded five</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Brief §5.3 vs §5.6; Stage 03 §4.</blockquote>
+<p>The earlier "five divisions" model (Knowledge → Education → Innovation → Operations → Impact, Brief §5.6) was superseded by the capability model (Brief §5.3) for a structural reason: the five-division model mixed <em>levels of abstraction</em>. "Knowledge" and "Education" are capabilities; "Innovation" and "Operations" are <em>processes</em> that cut across all capabilities; "Impact" is a capability but was inconsistently scoped. The capability model separates the <em>what</em> (capabilities) from the <em>how</em> (processes — the Flywheel §F, and the Operating System, Book V). This is why the supersession is recorded as architectural, not merely a rename (§H).</p>
+
+<h3>D.4 Clinical — a capability expressed through projects, not a division</h3>
+<blockquote><span class="ev">Evidence label: Founder Truth + Architectural Principle</span> Brief §5.6: "The clinic is explicitly a project, not a division"; Stage 03 §4.</blockquote>
+<p>The Clinical capability is ratified as an enduring competence — the ability to apply health knowledge to individual cases. The founder's clinic, however, is a <em>project</em> (a specific initiative within a product within a venture), not a division and not the whole of the Clinical capability. A clinic is one vehicle through which Clinical is expressed; the capability also encompasses protocols, practitioner training, and consultation craft that may be expressed through other vehicles (digital consults, training programs, written protocols). Affirming Clinical as a capability while affirming the clinic as a project preserves both the permanence of the competence and the experimental, retireable nature of the specific vehicle.</p>
+
+<h3>D.5 Investment — the capability whose mechanics are most deferred</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Brief §5.3 listed Investment but provided no output mapping — see §E.8.</blockquote>
+<p>Investment is ratified as a capability: the ability to allocate capital. Its inclusion reflects the enterprise's both/and commercial frame (Constitution §N) — the enterprise is profit-maximising <em>and</em> mission-sustaining, and allocating capital (into its own ventures and selectively into aligned external ones) is how profit is recycled into mission. The <em>mechanics</em> — what vehicles, what governance, what criteria — are heavily deferred (to Books III, VII, IX). This Book ratifies the <em>capability exists</em>; it does not design the portfolio.</p>
+
+<!-- ============ §E OUTPUT MAPPING ============ -->
+<h2>§E. The Capability → Output Mapping</h2>
+<p><span class="tag t-st">Stable (kinds)</span> <span class="tag t-ad">Adaptive (specifics)</span></p>
+<blockquote><span class="ev">Evidence label: Architectural Principle + Founder Truth</span> Brief §5.3 mapping; Stage 03 §2.</blockquote>
+<p>The Brief (§5.3) provided a partial output mapping and marked it Proposed. This Book ratifies the mapping with refinements: it completes the <strong>Investment</strong> mapping (which the Brief left blank), sharpens each capability's outputs against the Flywheel (§F) and the single-source-of-truth principle (Constitution §K.3; Design Principle 2), and labels each output's evidence standard. The mapping describes <em>what each capability can produce</em> — not what it currently produces. Specific products and ventures are Book VII work.</p>
+
+<h3>E.1 Research → outputs</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle + Founder Truth</span> Brief §5.3; Founder Constitution — root-cause truth as a centre value.</blockquote>
+<p>Research produces: <strong>articles, evidence summaries, original frameworks, validated protocols, and the knowledge substrate that every other capability consumes.</strong> Research is the upstream capability: it is where the Flywheel's <em>Observe → Understand</em> is most concentrated (§F). Its outputs are not consumer products; they are the raw material of Education, Clinical, Publishing, and Media. This reflects Design Principle 2 (knowledge created once, expressed many times) — Research creates the "once"; downstream capabilities do the "many times."</p>
+
+<h3>E.2 Education → outputs</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle + Founder Truth</span> Brief §5.3; Founder Constitution §06, §08; Constitution §I.2 exclusion 5.</blockquote>
+<p>Education produces: <strong>courses, workshops, certification, membership programs, and capacity-building experiences.</strong> Every output is transformation-focused, not commodity-framed (Constitution §I.2, exclusion 5: the prohibition is on commodity framing and pressure-marketing, not on courses themselves). Education is where the Flywheel's <em>Teach</em> is most concentrated. The founder foresees delivering many courses; each is a vehicle for transformational education, and the capability endures across all of them.</p>
+
+<h3>E.3 Technology → outputs</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Brief §5.3; Constitution §O.</blockquote>
+<p>Technology produces: <strong>AI assistants, applications, automations, software systems, and digital infrastructure.</strong> Technology is the scaling lever — it is how transformation scales without losing integrity (Constitution §K.3). All AI outputs are bound by the AI Accountability Principle (Constitution §O): AI augments judgement; it does not replace accountability. The detailed AI architecture is Book VIII; this Book ratifies Technology as the capability that <em>houses</em> it.</p>
+
+<h3>E.4 Clinical → outputs</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle + Founder Truth</span> Brief §5.3; Founder Constitution — naturopathic practice; §D.4.</blockquote>
+<p>Clinical produces: <strong>consultations, health protocols, practitioner training, and case-based knowledge.</strong> The clinic (a project) is one expression; the capability spans all individualised application of health knowledge. Clinical is where the Flywheel's <em>Observe → Understand → Prepare</em> is applied to a specific person. Clinical outputs feed back into Research (case evidence) — a closed loop (§F).</p>
+
+<h3>E.5 Publishing → outputs</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle + Founder Truth</span> Brief §5.3; Founder Constitution; Constitution §M.3.</blockquote>
+<p>Publishing produces: <strong>books, workbooks, frameworks (as published artefacts), journals, and durable written works.</strong> Publishing is distinct from Media (§E.6): Publishing is the <em>durable, written</em> expression; Media is the <em>ephemeral, spoken/visual</em> expression. Both derive from the same knowledge-once source (Design Principle 2). Publishing is the most energy-protective public-presence mode (Constitution §M.3: written-first always) and is therefore the primary mode by which the founder surfaces publicly.</p>
+
+<h3>E.6 Media → outputs</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle + Founder Truth</span> Brief §5.3; Founder Constitution §04; Constitution §M.3.</blockquote>
+<p>Media produces: <strong>podcast, video, newsletter, speaking engagements, and spoken/visual content.</strong> Media is the <em>live and ephemeral</em> expression — and therefore the one most constrained by the energy-protection gate (Constitution §M.3: rehearse-live, start-with-trusted-audiences). Media is secondary to Publishing in the founder's public-presence architecture (§M.3: written-first always, live secondary), not because it is less valuable but because it is more energy-expensive. Any Media venture that requires sustained, unrehearsed, high-frequency public performance is off-mission (Constitution §I.2, exclusion 2).</p>
+
+<h3>E.7 Commerce → outputs</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle + Founder Truth</span> Brief §5.3; Founder Constitution — 34-year plant-based living; Constitution §G.</blockquote>
+<p>Commerce produces: <strong>supplements, tools, merchandise, and physical/digital goods.</strong> Commerce is the most physically-supply-chain-intensive capability and is therefore the most exposed to the ethical-boundary gate (Constitution §G: no intentional harm to people or animals). Every Commerce output must be testable against the supply chain for harm (Constitution §I.2, exclusion 3). Commerce expresses the both/and frame (Constitution §N): it is a profit vehicle that sustains the mission engine.</p>
+
+<h3>E.8 Investment → outputs <span style="font-weight:300;font-style:italic;color:var(--taupe);font-size:9pt;">(mapping completed here — the Brief left it blank)</span></h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Brief §5.3 listed Investment but provided no mapping; this Book completes it.</blockquote>
+<p>Investment produces: <strong>capital allocation into the enterprise's own ventures (internal investment), selective capital allocation into aligned external ventures (external investment), and the financial infrastructure that recycles profit into mission.</strong> Investment is the capability that operationalises the both/and frame at the capital level (Constitution §N): profit is maximised <em>as a vehicle</em>, and a portion is recycled <em>into the engine</em> (mission-sustaining). The criteria for "aligned external" ventures are the Captain's Test and the on/off-mission gate (Constitution §I) — Investment does not invest in off-mission ventures, even profitable ones. The governance of Investment is deferred to Books III, VII, IX.</p>
+<blockquote>
+<span class="ev">Decision audit — DEC-BII-002: complete the Investment mapping</span>
+<strong>Why?</strong> The Brief left Investment mapping blank, leaving the catalogue internally incomplete. <strong>Alternatives:</strong> (a) defer Investment entirely — rejected: a catalogue with an undefined member is a draft error (Document 0.0 §4.2: no orphan claims); (b) define Investment narrowly as "own ventures only" — rejected: the both/and frame (§N) and the founder's long-term intent imply selective external allocation is within the possibility space. <strong>Why this?</strong> Defining Investment as internal + selective-external, with mechanics deferred, ratifies the <em>capability</em> without pre-empting the <em>portfolio</em> — preserving optionality (Design Principle 9). <strong>Assumptions:</strong> the enterprise will eventually hold capital beyond immediate operating needs. <strong>Risks:</strong> Investment could drift toward profit-without-mission; mitigated by the "aligned external" criterion (Captain's Test) and deferral of mechanics to Governance (Book III). <strong>When it no longer serves:</strong> if the enterprise never holds investable capital, Investment is held dormant — not removed (capabilities persist; §D.1).
+</blockquote>
+
+<h3>E.9 Impact → outputs</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle + Founder Truth</span> Brief §5.3; Founder Constitution — empower the vulnerable and underdogs; Constitution §P.2, §E.2.6.</blockquote>
+<p>Impact produces: <strong>charity, scholarships, advocacy, access programs, and public-good initiatives that operate beyond the market.</strong> Impact is the capability that most directly expresses the founder's purpose ("empower and build capacity, especially the vulnerable and underdogs"). Impact is not a downstream residue of profit; it is a ratified capability with its own outputs. The specific structures (charity entity, scholarship mechanics) are deferred to Book IX and Book III; this Book ratifies the <em>capability exists</em> and the <em>kinds of outputs</em>.</p>
+
+<h3>E.10 The mapping as a possibility space, not a commitment</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Stage 03 §2; Constitution §J.3.</blockquote>
+<p>The mapping describes what each capability <em>can</em> produce. It is not a product roadmap, not a venture list, and not a commitment to produce every output. A capability may be held dormant for years before a venture expresses it; that does not diminish its status as a capability (§D.1: capabilities persist). The mapping is the possibility space; the populating of it is downstream Book work.</p>
+
+<!-- ============ §F FLYWHEEL ============ -->
+<h2>§F. How Capabilities Interlock — The Flywheel Across the Catalogue</h2>
+<p><span class="tag t-st">Stable</span></p>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Constitution §L; Design Principle 2.</blockquote>
+
+<h3>F.1 Every capability expresses the Flywheel</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Constitution §L.3.</blockquote>
+<p>The Constitution (§L.3) states that the Enterprise Flywheel (Observe → Understand → Prepare → Create → Teach → Refine → Observe) is the operating rhythm of the enterprise and that <em>every capability expresses it</em>. This Book makes that concrete: each capability is a lens through which the same six-stage loop turns. The loop is not six separate capabilities; it is one rhythm expressed nine ways.</p>
+
+<h3>F.2 Where each Flywheel stage concentrates</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Constitution §L.2; this Book's §E.</blockquote>
+<table class="grid">
+  <thead><tr><th>Flywheel stage</th><th>Capabilities where it concentrates</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Observe</strong></td><td>Research · Clinical · Impact</td><td>Listening, sensing need — before acting (Constitution §L.2).</td></tr>
+    <tr><td><strong>Understand</strong></td><td>Research · Clinical</td><td>Root-cause depth (founder's centre value).</td></tr>
+    <tr><td><strong>Prepare</strong></td><td>Clinical · Education · Technology</td><td>Designing the response before delivering it.</td></tr>
+    <tr><td><strong>Create</strong></td><td>Publishing · Media · Technology · Commerce</td><td>Producing the artefact, system, or good.</td></tr>
+    <tr><td><strong>Teach</strong></td><td>Education · Media · Publishing</td><td>Transmitting to those who need it.</td></tr>
+    <tr><td><strong>Refine</strong></td><td>Research · Technology · Investment</td><td>Reviewing, improving, recycling learning (and capital) back in.</td></tr>
+  </tbody>
+</table>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> This table operationalises Constitution §L; it introduces no new principle. No capability is confined to one stage; the table marks <em>concentration</em>, not exclusion. The point is to show the catalogue is internally coherent: the nine capabilities are not nine silos but nine expressions of one loop.</blockquote>
+
+<h3>F.3 The knowledge-once loop — capabilities as a single circulation</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Brief §5.7; Constitution §K.3; Design Principle 2.</blockquote>
+<p>The single-source-of-truth principle (Constitution §K.3; Design Principle 2) means the capabilities form a circulation, not a pipeline:</p>
+<pre>Research creates knowledge (the "once")
+        ↓
+Education · Clinical · Publishing · Media · Technology express it (the "many times")
+        ↓
+Commerce · Investment sustain it (the vehicles)
+        ↓
+Impact radiates it (beyond the market)
+        ↓
+Research refines it (case evidence, feedback) → back to the top</pre>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Brief §5.7 canonical chain; Constitution §L.3. This is the architectural reason no capability is redundant: each is a distinct expression of the same knowledge, and each feeds back into Research. A venture that does not plug into this circulation — that creates knowledge independently or duplicates it — violates Design Principle 2 and the Business Brain principle (Document 0.0 §9; Book IV).</blockquote>
+
+<!-- ============ §G SEQUENCE ============ -->
+<h2>§G. Organisation Before Companies — The Sequence, Made Concrete</h2>
+<p><span class="tag t-st">Stable</span></p>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Brief §5.4; Constitution §K.1; Stage 03 §2.</blockquote>
+
+<h3>G.1 The ratified sequence</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Brief §5.4.</blockquote>
+<p>The Brief (§5.4) established the sequence rule: legal structures must not be designed first. This Book affirms and makes it concrete by placing the capability catalogue as the second step:</p>
+<pre>Organisation  →  Capabilities  →  Governance  →  Ownership philosophy  →  Legal entities  →  Companies
+   (Book I)       (Book II)         (Book III)      (Book III / IX)         (post-III)          (Book VII)</pre>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Brief §5.4; Stage 03 §2. This Book occupies the second position. It is complete (once ratified) before Governance (Book III) begins. The sequence is not a suggestion; it is the structural reason the enterprise avoids premature restructuring (Brief §5.4: "This sequencing reduces restructuring later").</blockquote>
+
+<h3>G.2 Why the sequence is load-bearing</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Brief §5.4; Design Principle 9.</blockquote>
+<p>If legal entities are designed before capabilities, the legal shape constrains the capability shape — and capabilities outlive legal entities (Constitution §K.2). Designing capabilities first means the legal structure is later <em>fitted to</em> the capabilities, not the reverse. This protects optionality (Design Principle 9): the enterprise can choose the legal vehicle that best expresses a capability <em>when it is ready to express it</em>, rather than being locked into a vehicle chosen before the capability was understood.</p>
+<blockquote>
+<span class="ev">Decision audit — DEC-BII-003: affirm the sequence with Book positions</span>
+<strong>Why?</strong> The sequence was Established in the Brief but not mapped to the Book structure; mapping it makes the inter-Book dependency explicit and prevents a downstream stage skipping a step. <strong>Alternatives:</strong> leave unmapped — rejected: unmapped dependencies become orphaned dependencies (the biggest long-term risk per HANDOVER_PROTOCOL §5). <strong>Why this?</strong> Mapping each step to its Book makes the sequence machine-checkable: a future AI agent can verify no Book attempts a downstream step before its upstream step is ratified. <strong>Assumptions:</strong> the Book sequence (I→II→III→…→IX) is the production sequence. <strong>Risks:</strong> a step may need revisiting (Governance informs a capability refinement) — the §5.4 mechanism handles this; the sequence is the default, not a one-way valve. <strong>When it no longer serves:</strong> never — the principle is time-invariant; only the Book mapping could update.
+</blockquote>
+
+<h3>G.3 What this Book does NOT do in the sequence</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Brief §5.5; Constitution §J.3.</blockquote>
+<p>This Book ratifies the <em>capability</em> layer and affirms the <em>sequence</em>. It does not design Ownership philosophy, Legal entities, or Companies — those are explicitly downstream (§C.2). The founder's earlier discussion of entity structures (Sole Trader, Pty Ltd, Family Trust, Holding, Trust+Company) is recorded as <em>deferred to professional advice after Books II &amp; III</em> (Brief §5.5), and this Book does not pre-empt it.</p>
+
+<!-- ============ §H SUPERSESSION ============ -->
+<h2>§H. Supersession Record — The 5-Division Model</h2>
+<p><span class="tag t-im">Immutable (historical fact)</span></p>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Brief §5.6; Stage 03 §4; Document 0.0 §10.2 — "Nothing is ever deleted; superseded text is marked, not removed."</blockquote>
+
+<h3>H.1 What is superseded</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Brief §5.6.</blockquote>
+<p>The earlier proposed "five divisions" model — <strong>Knowledge → Education → Innovation → Operations → Impact</strong> (Brief §5.6) — is <strong>superseded</strong> by the capability catalogue (§D.2). It is not renamed; it is replaced, for the structural reason given in §D.3: the five-division model mixed levels of abstraction (capabilities with processes), whereas the capability model separates them.</p>
+
+<h3>H.2 What is preserved from the superseded model</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Brief §5.6.</blockquote>
+<p>Two elements are preserved <em>in corrected form</em>: <strong>Impact</strong> is retained as a capability (§D.2, #9); the <strong>clinic is a project, not a division</strong> (Brief §5.6) is retained and sharpened (§D.4). Nothing else from the five-division model is carried forward.</p>
+
+<h3>H.3 The rule against resurrection</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Stage 03 §4; Document 0.0 §10.2.</blockquote>
+<p>The five-division model is not to be resurrected. If a future collaborator or AI agent proposes restoring it, the proposal is a §5.4 change request (Document 0.0 §5.4) routed through the Founder — not a silent reversion. The supersession is recorded here as institutional memory: the enterprise remembers <em>why</em> it moved from five divisions to nine capabilities, so the mistake is not remade (Document 0.0 §10.2).</p>
+
+<!-- ============ §I HIERARCHY ============ -->
+<h2>§I. The Capability Layer Within the Architecture Hierarchy</h2>
+<p><span class="tag t-st">Stable</span></p>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Constitution §K.1; Brief §5.2.</blockquote>
+
+<h3>I.1 Where capabilities sit</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Constitution §K.1.</blockquote>
+<p>The Constitution (§K.1) fixes the hierarchy. This Book does not move capabilities within it; it <em>populates</em> the capability layer. The hierarchy is now concrete:</p>
+<pre>Founder (Emma)
+   ↓
+Organisation (the Intellectual Enterprise)
+   ↓
+Capabilities (Research · Education · Technology · Clinical · Publishing · Media · Commerce · Investment · Impact)  ← this Book
+   ↓
+Ventures (businesses expressing one or more capabilities)  ← Book VII
+   ↓
+Products (what ventures produce)  ← Book VII
+   ↓
+Projects (specific initiatives within products)  ← Book VII</pre>
+
+<h3>I.2 The many-to-many relationship: capabilities ↔ ventures</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Constitution §K.2: "A venture is a business that expresses one or more capabilities."</blockquote>
+<p>A venture expresses <em>one or more</em> capabilities (Constitution §K.2). A capability is expressed by <em>zero or more</em> ventures (a capability may be held dormant, §E.10). The relationship is many-to-many:</p>
+<ul>
+  <li>A single venture (e.g., a future health-education platform) may express Research + Education + Technology + Clinical simultaneously.</li>
+  <li>A single capability (e.g., Publishing) may be expressed by multiple ventures (a book imprint, a journal, a workbook series).</li>
+</ul>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> This operationalises Constitution §K.2; it introduces no new principle. This is why capabilities are the permanent layer and ventures the experimental layer: the many-to-many mapping can be reconfigured freely (ventures pivot, close, launch) while the capabilities persist. Designing the catalogue before the ventures is what makes the reconfiguration safe (§G.2).</blockquote>
+
+<h3>I.3 What this Book does not populate</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Constitution §J.3; Stage 03 §2.</blockquote>
+<p>This Book populates the <em>capability</em> layer only. It does not populate the Ventures, Products, or Projects layers — those are Book VII. Any specific venture named in this Book would be a scope violation. The architecture hierarchy is filled top-down, one layer per Book, in sequence (§G.1).</p>
+
+<!-- ============ §J GATES ============ -->
+<h2>§J. How the Constitutional Gates Apply to Capabilities</h2>
+<p><span class="tag t-st">Stable</span></p>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Constitution §I, §L, §M, §G, §O; this Book applies them, it does not amend them.</blockquote>
+<p>The Constitution establishes several gates that bind "every venture, every role, every system, and every AI agent" (§M.2). This section makes explicit how those gates apply at the <em>capability</em> layer — the layer above ventures. Capabilities are upstream of ventures; if a capability is sound, the ventures that express it inherit a sound foundation. If a capability itself violated a constitutional gate, every venture expressing it would inherit the violation. The gates therefore apply at the capability layer as <em>design constraints on what may be catalogued</em>.</p>
+
+<h3>J.1 The on/off-mission gate (Constitution §I) — applied to capabilities</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Constitution §I.1, §I.2, §I.3.</blockquote>
+<p>Each ratified capability is testable against the Captain's Test (Constitution §I.1) and the off-mission exclusions (§I.2). The test at the capability layer: <em>does this capability, by its nature, serve the founder's purpose and is it free of the five off-mission exclusions?</em></p>
+<table class="grid">
+  <thead><tr><th>Capability</th><th>Captain's Test</th><th>Off-mission exclusion check</th><th>Verdict</th></tr></thead>
+  <tbody>
+    <tr><td><strong>Research</strong></td><td>Serves root-cause truth</td><td>None triggered</td><td>On-mission</td></tr>
+    <tr><td><strong>Education</strong></td><td>Serves transformational capacity-building</td><td>Exclusion 5 (commodity courses) — <em>does not trigger at capability level</em>; triggers at venture level if a specific course is commodity-framed</td><td>On-mission (capability); ventures vetted individually</td></tr>
+    <tr><td><strong>Technology</strong></td><td>Serves scaling transformation without losing integrity</td><td>None at capability level; AI accountability (§O) binds at venture level</td><td>On-mission</td></tr>
+    <tr><td><strong>Clinical</strong></td><td>Serves individual health transformation</td><td>None</td><td>On-mission</td></tr>
+    <tr><td><strong>Publishing</strong></td><td>Serves durable transmission (written-first, energy-protective)</td><td>None</td><td>On-mission</td></tr>
+    <tr><td><strong>Media</strong></td><td>Serves spoken/visual transmission</td><td>Exclusion 2 (performative persona) — <em>does not trigger at capability level</em>; triggers at venture level if a Media venture requires sustained unrehearsed performance</td><td>On-mission (capability); ventures vetted individually</td></tr>
+    <tr><td><strong>Commerce</strong></td><td>Serves goods that support transformation</td><td>Exclusion 3 (harm to people/animals) — <em>triggers at venture/product level via supply chain</em></td><td>On-mission (capability); ventures vetted individually</td></tr>
+    <tr><td><strong>Investment</strong></td><td>Serves recycling profit into mission</td><td>None at capability level; "aligned external" criterion (§E.8) binds at venture level</td><td>On-mission</td></tr>
+    <tr><td><strong>Impact</strong></td><td>Directly serves empowering the vulnerable</td><td>None</td><td>On-mission</td></tr>
+  </tbody>
+</table>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> A crucial distinction: <strong>some off-mission exclusions do not trigger at the capability level but do trigger at the venture level.</strong> Education (the capability) is on-mission; a <em>commodity-framed course</em> (a venture) is off-mission (exclusion 5). Media (the capability) is on-mission; a <em>sustained-unrehearsed-performance</em> media venture is off-mission (exclusion 2). Commerce (the capability) is on-mission; a <em>harmful-supply-chain</em> product is off-mission (exclusion 3). This is why the on/off-mission gate is applied <em>twice</em> — once at the capability layer (this Book) and once at the venture layer (Book VII). The capability-level check ensures the <em>possibility space</em> is sound; the venture-level check ensures each <em>instance</em> is sound.</blockquote>
+
+<h3>J.2 The energy-protection gate (Constitution §M) — applied to capabilities</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle + Founder Truth</span> Constitution §M.2, §M.3.</blockquote>
+<p>The energy-protection gate (Constitution §M) binds every venture, role, system, and AI agent. At the capability layer, it applies as a <em>design constraint on how each capability may be expressed</em>:</p>
+<ul>
+  <li><strong>Publishing</strong> is the most energy-protective capability (written-first, Constitution §M.3) and is therefore the <em>primary</em> mode of the founder's public presence. The architecture does not require the founder to be visible live for Publishing to function.</li>
+  <li><strong>Media</strong> is the most energy-intensive capability (live, ephemeral) and is therefore <em>secondary</em>, constrained by rehearse-live and start-with-trusted-audiences (§M.3). The architecture permits Media to be held dormant or lightly expressed without diminishing the enterprise.</li>
+  <li><strong>Clinical</strong> is energy-intensive in its live, one-to-one form; the architecture permits Clinical to be expressed through lower-energy vehicles (written protocols, recorded training, asynchronous consults) where the live clinic would violate energy protection.</li>
+  <li><strong>Research, Education, Technology, Commerce, Investment, Impact</strong> are expressed primarily through systems and written/designed work — the founder's energy is spent in <em>creation and design</em>, not in sustained live delivery. This is the architectural expression of Design Principle 7 and Constitution §M.2.</li>
+</ul>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Constitution §M.3 (written-first always); §M.2 (scale is a system outcome, not founder velocity). The architectural implication: <strong>the capability catalogue is designed so that the enterprise can function at scale with the founder expending energy primarily in written creation and design, not in sustained live performance.</strong> A capability whose only viable expression required sustained, unrehearsed, high-frequency founder performance would be off-mission (Constitution §I.2, exclusion 2) — and no capability in this catalogue has that requirement, because each has a written-first or system-mediated expression path.</blockquote>
+
+<h3>J.3 The Flywheel gate (Constitution §L) — applied to capabilities</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Constitution §L.3.</blockquote>
+<p>Every capability must express the Flywheel (Constitution §L.3). §F demonstrates that each does. A capability that could not be expressed through Observe → Understand → Prepare → Create → Teach → Refine → Observe would not belong in the catalogue. None of the nine fails this test (§F.2).</p>
+
+<h3>J.4 The ethical-boundary gate (Constitution §G) — applied to capabilities</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Constitution §G.1, §G.4.</blockquote>
+<p>No capability may, by its nature, require intentional harm or dishonesty (Constitution §G.1). None of the nine does. The ethical-boundary gate binds most concretely at the venture and product layer (supply chains, marketing honesty — Book VII), but the capability layer is pre-cleared: the catalogue contains no capability whose <em>essence</em> is harmful or deceptive.</p>
+
+<h3>J.5 The AI-accountability principle (Constitution §O) — applied to capabilities</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Constitution §O.1, §O.2.</blockquote>
+<p>The Technology capability houses the enterprise's AI outputs (§E.3). At the capability layer, the AI Accountability Principle (Constitution §O) is a <em>design constraint</em>: Technology is ratified as a capability <em>on the condition</em> that every AI output it produces keeps a human accountable party (Constitution §O.1). The operational AI architecture is Book VIII; this Book ratifies the capability and inherits the principle.</p>
+
+<!-- ============ §K GLOSSARY ============ -->
+<h2>§K. Glossary Additions to the Enterprise Vocabulary</h2>
+<p><span class="tag t-ad">Adaptive</span></p>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Document 0.0 §9 vocabulary growth rule.</blockquote>
+<p>The following terms are added to the Enterprise Vocabulary (Document 0.0 §9). Per the one-source-of-truth rule (Design Principle 2/6), these definitions live here as canonical; downstream Books and AI agents reference them, not duplicate them.</p>
+<ul>
+  <li><strong>Capability Catalogue</strong> — the ratified set of enduring organisational functions the Intellectual Enterprise is organised around (Research · Education · Technology · Clinical · Publishing · Media · Commerce · Investment · Impact). Book II §D.2. <em>(Architectural Principle.)</em></li>
+  <li><strong>Capability → Output Mapping</strong> — the ratified description of what each capability can produce (not what it currently produces). A possibility space, not a product roadmap. Book II §E. <em>(Architectural Principle.)</em></li>
+  <li><strong>Capability (refined)</strong> — an enduring organisational function that outlives the businesses that temporarily express it; the unit of organisational permanence. Refines Document 0.0 §9. Book II §D.1. <em>(Architectural Principle.)</em></li>
+  <li><strong>Organisation-Before-Companies (sequence)</strong> — Organisation → Capabilities → Governance → Ownership philosophy → Legal entities → Companies. Capabilities and governance designed before legal entities, to reduce future restructuring. Brief §5.4; Book II §G.1. <em>(Architectural Principle.)</em></li>
+  <li><strong>Supersession (5-Division Model)</strong> — the historical replacement of the earlier five-division model by the nine-capability catalogue. Recorded as institutional memory; not to be resurrected. Book II §H. <em>(Architectural Principle.)</em></li>
+  <li><strong>Many-to-Many (Capabilities ↔ Ventures)</strong> — a venture expresses one or more capabilities; a capability is expressed by zero or more ventures. Makes capabilities the permanent layer and ventures the experimental layer. Book II §I.2. <em>(Architectural Principle.)</em></li>
+  <li><strong>Dormant Capability</strong> — a ratified capability held in the catalogue but not currently expressed by any venture. Holding a capability dormant does not diminish its status; capabilities persist. Book II §E.10. <em>(Architectural Principle.)</em></li>
+  <li><strong>Capability-Level vs Venture-Level Gate</strong> — the on/off-mission and energy-protection gates apply twice: once at the capability layer (possibility space is sound) and once at the venture layer (each instance is sound). Some exclusions trigger only at the venture level. Book II §J.1. <em>(Architectural Principle.)</em></li>
+</ul>
+
+<!-- ============ §L CROSS-REF ============ -->
+<h2>§L. Cross-Reference Index</h2>
+<p><span class="tag t-st">Stable</span></p>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Document 0.0 §11.6.</blockquote>
+<table class="grid">
+  <thead><tr><th>This Book (Book II)</th><th>Source / Parent</th><th>Evidence label</th></tr></thead>
+  <tbody>
+    <tr><td>§A Preamble</td><td>Constitution §K.1, §J.2; Brief §8.3 Book II</td><td>Architectural Principle</td></tr>
+    <tr><td>§B Inherited rule</td><td>Constitution §J.1–§J.2</td><td>Architectural Principle</td></tr>
+    <tr><td>§C Scope</td><td>Stage 03 §2; Brief §5.5; Constitution §J.3</td><td>Architectural Principle</td></tr>
+    <tr><td>§D Capability Catalogue</td><td>Brief §5.3 (Proposed); Constitution §K.1; Document 0.0 §9</td><td>Architectural Principle + Founder Truth</td></tr>
+    <tr><td>§D.4 Clinical / clinic-as-project</td><td>Brief §5.6; Stage 03 §4</td><td>Founder Truth + Architectural Principle</td></tr>
+    <tr><td>§D.5 Investment</td><td>Brief §5.3; Constitution §N</td><td>Architectural Principle</td></tr>
+    <tr><td>§E Output Mapping</td><td>Brief §5.3 (partial, refined)</td><td>Architectural Principle + Founder Truth</td></tr>
+    <tr><td>§E.8 Investment mapping (completed)</td><td>Brief §5.3 (blank, completed); Constitution §N, §I</td><td>Architectural Principle</td></tr>
+    <tr><td>§F Flywheel across catalogue</td><td>Constitution §L; Design Principle 2</td><td>Architectural Principle</td></tr>
+    <tr><td>§G Organisation-before-companies</td><td>Brief §5.4; Constitution §K.1</td><td>Architectural Principle</td></tr>
+    <tr><td>§H Supersession record</td><td>Brief §5.6; Stage 03 §4; Document 0.0 §10.2</td><td>Architectural Principle</td></tr>
+    <tr><td>§I Capability layer in hierarchy</td><td>Constitution §K.1, §K.2; Brief §5.2</td><td>Architectural Principle</td></tr>
+    <tr><td>§J Constitutional gates applied</td><td>Constitution §I, §L, §M, §G, §O</td><td>Architectural Principle + Founder Truth</td></tr>
+    <tr><td>§K Glossary additions</td><td>Document 0.0 §9</td><td>Architectural Principle</td></tr>
+    <tr><td>§L Cross-reference index</td><td>Document 0.0 §11.6</td><td>Architectural Principle</td></tr>
+    <tr><td>§M Decision register</td><td>This Book</td><td>Architectural Principle (per decision)</td></tr>
+    <tr><td>§N Quality-gate self-audit</td><td>Document 0.0 §6.1</td><td>Architectural Principle</td></tr>
+    <tr><td>§O Stage 03 checklist verification</td><td>Stage 03 §2, §5</td><td>Architectural Principle</td></tr>
+    <tr><td>§P Handover manifest → Stage 04</td><td>Document 0.0 §12.2; HANDOVER_PROTOCOL §1</td><td>Architectural Principle</td></tr>
+  </tbody>
+</table>
+
+<!-- ============ §M DECISION REGISTER ============ -->
+<h2>§M. Decision Register — This Book's Ratifications</h2>
+<p><span class="tag t-st">Stable</span></p>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Document 0.0 §6.2 — every major recommendation carries a decision audit.</blockquote>
+<table class="grid">
+  <thead><tr><th>ID</th><th>Decision</th><th>Status</th><th>Rationale (summary)</th><th>Depends on</th></tr></thead>
+  <tbody>
+    <tr><td><strong>DEC-BII-001</strong></td><td>Ratify the nine-capability set.</td><td>Ratified v1.0 (Founder, 07 Aug 2026)</td><td>Constitution §K.1 directs the catalogue; Brief §5.3 covers expressed venture intentions without residue; minimum sufficient set.</td><td>Constitution §K.1; Brief §5.3</td></tr>
+    <tr><td><strong>DEC-BII-002</strong></td><td>Complete the Investment → output mapping (internal + selective-external; mechanics deferred).</td><td>Ratified v1.0 (Founder, 07 Aug 2026)</td><td>Brief left Investment mapping blank; a catalogue with an undefined member is a draft error. Completes without pre-empting the portfolio.</td><td>Brief §5.3; Constitution §N</td></tr>
+    <tr><td><strong>DEC-BII-003</strong></td><td>Affirm the organisation-before-companies sequence and map each step to its owning Book.</td><td>Ratified v1.0 (Founder, 07 Aug 2026)</td><td>Brief §5.4 Established the sequence; mapping it makes the dependency machine-checkable and prevents skipped steps.</td><td>Brief §5.4; Constitution §J.3</td></tr>
+    <tr><td><strong>DEC-BII-004</strong></td><td>Confirm the supersession of the 5-division model and record it as institutional memory.</td><td>Ratified v1.0 (Founder, 07 Aug 2026)</td><td>Brief §5.6 superseded it; recording <em>why</em> prevents the mistake being remade.</td><td>Brief §5.6; Document 0.0 §10.2</td></tr>
+    <tr><td><strong>DEC-BII-005</strong></td><td>Apply the constitutional gates at the capability layer; specify capability-level vs venture-level triggering.</td><td>Ratified v1.0 (Founder, 07 Aug 2026)</td><td>Constitution binds every venture/role/system/agent; applying at capability layer pre-clears the possibility space. Distinguishing triggering prevents over- and under-vetting.</td><td>Constitution §I, §L, §M, §G, §O</td></tr>
+    <tr><td><strong>DEC-BII-006</strong></td><td>Ratify Publishing as primary (written-first, energy-protective) and Media as secondary (rehearse-live, trusted-audiences-first).</td><td>Ratified v1.0 (Founder, 07 Aug 2026)</td><td>Operationalises Constitution §M.3 at the capability layer; protects founder energy by design.</td><td>Constitution §M.3; Founder Constitution §02</td></tr>
+  </tbody>
+</table>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Each decision has been run through the decision audit (Document 0.0 §6.2) — full audit text inline at the cited section — and the architecture test (Document 0.0 §6.3) — see §N.</blockquote>
+
+<!-- ============ §N QUALITY GATES ============ -->
+<h2>§N. Quality-Gate Self-Audit &amp; Architecture Test</h2>
+<p><span class="tag t-st">Stable</span></p>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Document 0.0 §6.1, §6.3.</blockquote>
+
+<h3>N.1 The six quality gates</h3>
+<table class="grid">
+  <thead><tr><th>Gate</th><th>Test</th><th>Result</th></tr></thead>
+  <tbody>
+    <tr><td><strong>1. Founder Alignment</strong></td><td>Could only Emma have authored the intent?</td><td><strong>Pass</strong> — the capability set derives from her expressed venture intentions; energy-protection applied to every capability (§J.2) per her Immutable constraint; written-first/Media-secondary reflects her INFJ + I-last processing.</td></tr>
+    <tr><td><strong>2. Architectural Integrity</strong></td><td>Does it expand its parent without contradiction?</td><td><strong>Pass</strong> — expands Constitution §K.1 (catalogues the capabilities left to Book II); affirms §J.2; applies §I, §L, §M, §G, §O rather than amending them. No contradiction identified.</td></tr>
+    <tr><td><strong>3. Operational Practicality</strong></td><td>Can it be implemented by a solo founder with protected energy?</td><td><strong>Pass</strong> — every capability has a written-first or system-mediated expression path; the catalogue is a possibility space, not a commitment; dormant capabilities permitted; Publishing is primary (energy-protective).</td></tr>
+    <tr><td><strong>4. Future Resilience</strong></td><td>Will it still make sense in ten years?</td><td><strong>Pass</strong> — capabilities defined as enduring functions that outlive businesses; the set is minimum sufficient (not over-specified, preserving optionality); definitions are Adaptive.</td></tr>
+    <tr><td><strong>5. AI Readiness</strong></td><td>Can a future AI agent reason from it?</td><td><strong>Pass</strong> — stable section IDs; every statement evidence-labelled; defined glossary terms; explicit cross-references; one canonical term per concept; the capability↔venture many-to-many is machine-representable.</td></tr>
+    <tr><td><strong>6. Elegance</strong></td><td>Could anything be removed without losing meaning?</td><td><strong>Pass</strong> — each section carries a distinct required element; no capability duplicates another's Flywheel concentration; the supersession record is institutional memory, not redundancy; the Investment mapping completes rather than extends.</td></tr>
+  </tbody>
+</table>
+
+<h3>N.2 The architecture test (applied to each decision)</h3>
+<table class="grid">
+  <thead><tr><th>Decision</th><th>Simplify?</th><th>Scale?</th><th>Optionality?</th><th>Constitution?</th><th>Friction?</th></tr></thead>
+  <tbody>
+    <tr><td>DEC-BII-001 (nine capabilities)</td><td>Yes — minimum sufficient</td><td>Yes — scale by adding ventures</td><td>Yes — not over-specified</td><td>Yes — §K.1, §K.2</td><td>Yes — capabilities before ventures</td></tr>
+    <tr><td>DEC-BII-002 (Investment mapping)</td><td>Yes — completes catalogue</td><td>Yes — internal + external</td><td>Yes — mechanics deferred</td><td>Yes — §N, §I</td><td>Yes — no undefined member</td></tr>
+    <tr><td>DEC-BII-003 (sequence mapped)</td><td>Yes — one sequence</td><td>Yes — machine-checkable</td><td>Yes — default, revisit via §5.4</td><td>Yes — §J.3</td><td>Yes — prevents skipped steps</td></tr>
+    <tr><td>DEC-BII-004 (supersession recorded)</td><td>Yes — one model</td><td>Yes — future agents see history</td><td>Yes — change is §5.4</td><td>Yes — §10.2</td><td>Yes — prevents resurrection</td></tr>
+    <tr><td>DEC-BII-005 (gates at capability layer)</td><td>Yes — applied once at design</td><td>Yes — pre-clears possibility space</td><td>Yes — distinguishes triggering</td><td>Yes — §I, §M, §L, §G, §O</td><td>Yes — no inherited violation</td></tr>
+    <tr><td>DEC-BII-006 (Publishing primary / Media secondary)</td><td>Yes — one primary mode</td><td>Yes — functions at scale without live founder</td><td>Yes — Media can be dormant</td><td>Yes — §M.3</td><td>Yes — energy-protective by design</td></tr>
+  </tbody>
+</table>
+<p>All decisions pass the architecture test. All six quality gates pass.</p>
+
+<!-- ============ §O CHECKLIST ============ -->
+<h2>§O. Stage 03 Checklist Verification</h2>
+<p><span class="tag t-st">Stable</span></p>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Stage 03 §2, §5.</blockquote>
+<table class="grid">
+  <thead><tr><th>Stage 03 required element</th><th>Book II home</th><th>Status</th></tr></thead>
+  <tbody>
+    <tr><td>What can exist inside the organisation</td><td>§A, §C.1, §D</td><td>✓ Delivered</td></tr>
+    <tr><td>Capability architecture ratified (nine capabilities)</td><td>§D.2 (DEC-BII-001)</td><td>✓ Delivered & Ratified v1.0</td></tr>
+    <tr><td>Capability → output mapping ratified</td><td>§E (DEC-BII-002 for Investment)</td><td>✓ Delivered & Ratified v1.0</td></tr>
+    <tr><td>"No businesses yet — only capabilities" preserved</td><td>§A, §C.2, §E.10, §I.3</td><td>✓ Delivered</td></tr>
+    <tr><td>Organisation-before-companies sequence affirmed</td><td>§G (DEC-BII-003)</td><td>✓ Delivered</td></tr>
+  </tbody>
+</table>
+<p>All five Stage 03 checklist elements are delivered.</p>
+<table class="grid">
+  <thead><tr><th>Deliverable</th><th>Status</th></tr></thead>
+  <tbody>
+    <tr><td>Master .md</td><td>✓ This document</td></tr>
+    <tr><td>PDF</td><td>✓ Grounded Ethereal, A4 (this rendering)</td></tr>
+    <tr><td>Version history</td><td>✓ §P.3</td></tr>
+    <tr><td>Decision register</td><td>✓ §M</td></tr>
+    <tr><td>Glossary updates</td><td>✓ §K</td></tr>
+    <tr><td>Cross-reference index</td><td>✓ §L</td></tr>
+    <tr><td>Handover manifest → 00_GLOBAL_INDEX.md §6</td><td>✓ §P.1</td></tr>
+  </tbody>
+</table>
+
+<!-- ============ §P HANDOVER ============ -->
+<h2>§P. Handover, Version History &amp; Change Log</h2>
+
+<h3>P.1 Handover Manifest — out to Stage 04 (Governance)</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Document 0.0 §12.2; HANDOVER_PROTOCOL §1. This manifest is binding as of Founder ratification on 07 Aug 2026 through the Document 0.0 §5.4 process.</blockquote>
+<p><strong>What has been established (carry forward):</strong> The capability catalogue is ratified (nine capabilities). The capability→output mapping is ratified (with Investment completed). The organisation-before-companies sequence is affirmed and Book-mapped. The 5-division model is superseded and recorded. The constitutional gates are applied at the capability layer, with the capability-level vs venture-level triggering distinction specified. Publishing is primary (energy-protective); Media is secondary.</p>
+<p><strong>Immutable decisions (do not reopen without §5.4):</strong> The nine-capability set (DEC-BII-001). The organisation-before-companies sequence (DEC-BII-003). The supersession of the 5-division model (DEC-BII-004). The many-to-many capability↔venture relationship (§I.2). The principle that the constitutional gates apply at the capability layer (DEC-BII-005).</p>
+<p><strong>Unresolved / deferred (Stage 04 and beyond must know):</strong> Specific ventures, products, companies → Book VII. Legal/tax/entity structure → professional advice after Books II &amp; III. Governance structures, decision frameworks, operational ethics → Book III (Stage 04). Knowledge systems, Business Brain → Book IV. Business OS, SOPs, AI agent design → Books V, VIII. Brand architecture, lexicon licencing → Book VI. Succession, charity structure → Book IX. Investment mechanics → Books III, VII, IX.</p>
+<p><strong>Constraints on downstream stages:</strong> Stage 04 (Governance) governs <em>how</em> capabilities are decisioned and owned — it does not re-catalogue them. Stage 04 must respect the organisation-before-companies sequence. Every downstream venture (Book VII) must map to one or more ratified capabilities and pass both the capability-level and venture-level gates. No downstream Book may resurrect the 5-division model.</p>
+<p><strong>Dependencies:</strong> Stage 04 depends on the capability catalogue to define <em>what is being governed</em>. Book VII depends on this catalogue to define <em>what each venture expresses</em>. The first intermittent structural audit (HANDOVER_PROTOCOL §5) is due now — Stages 02 and 03 are complete.</p>
+<p><strong>Recommended starting point for Stage 04:</strong> Open a new chat in this project. Attach this handover manifest. State: <em>"Begin Stage 04 — Book III Governance, per Book II §P.1."</em> The architect confirms ingestion of the capability catalogue and the organisation-before-companies sequence, then proposes the governance architecture — <em>who owns what, how decisions are made, when an idea stays a project vs becomes a business</em> — expanding the Constitution without contradicting it.</p>
+
+<h3>P.2 Risks &amp; assumptions (carry forward)</h3>
+<blockquote><span class="ev">Evidence label: Architectural Principle</span> Document 0.0 §12.2.</blockquote>
+<p><strong>Risks:</strong> (1) A capability may later prove to be two, or two may prove to be one — mitigated by Adaptive definitions + §5.4. (2) Investment, if activated without governance, could drift toward profit-without-mission — mitigated by the "aligned external" criterion and deferral of mechanics to Book III. (3) The many-to-many mapping, if not tracked, could let a venture express an undefined "capability" not in the catalogue — mitigated: ventures must map to <em>ratified</em> capabilities; the catalogue is closed unless re-ratified.</p>
+<p><strong>Assumptions:</strong> (1) The founder's venture interests are stable in <em>kind</em> even as they evolve in <em>form</em>. (2) The nine-capability set is the minimum sufficient; a tenth enduring function is added by §5.4 re-ratification, not by silent extension. (3) The enterprise will, over its horizon, hold capital and activate Investment; if it does not, Investment remains dormant, not removed.</p>
+
+<h3>P.3 Version history</h3>
+<table class="grid">
+  <thead><tr><th>Version</th><th>Date</th><th>Status</th><th>Author</th><th>Notes</th></tr></thead>
+  <tbody>
+    <tr><td>—</td><td>—</td><td>Skeletal</td><td>—</td><td>Template created during restructure (Stage 03 §6).</td></tr>
+    <tr><td>0.1</td><td>07 Aug 2026</td><td>Draft for Founder Review</td><td>Chief Enterprise Architect</td><td>Initial Book II draft. Capability catalogue ratified (DEC-BII-001); output mapping ratified with Investment completed (DEC-BII-002); sequence affirmed and Book-mapped (DEC-BII-003); 5-division supersession recorded (DEC-BII-004); gates applied at capability layer (DEC-BII-005); Publishing-primary/Media-secondary (DEC-BII-006). All five Stage 03 checklist elements delivered. All six quality gates Pass. Awaiting Founder ratification through Document 0.0 §5.4.</td></tr>
+    <tr><td>1.0</td><td>07 Aug 2026</td><td>Ratified — Binding</td><td>Founder (Emma)</td><td>Founder ratified Book II v0.1 as-is through Document 0.0 §5.4. No changes requested. All six DEC-BII decisions now binding. Version stamped v1.0.</td></tr>
+  </tbody>
+</table>
+
+<h3>P.4 Change history</h3>
+<table class="grid">
+  <thead><tr><th>Version</th><th>Date</th><th>What changed</th><th>Why</th></tr></thead>
+  <tbody>
+    <tr><td>0.1</td><td>07 Aug 2026</td><td>Initial production of Book II.</td><td>Stage 03 deliverable; produced from Brief §5.2–5.5 and Constitution §K. Per Constitution §J.2, expands without contradicting.</td></tr>
+    <tr><td>1.0</td><td>07 Aug 2026</td><td>Version stamped v1.0; status changed from Draft to Ratified — Binding.</td><td>Founder ratified as-is through Document 0.0 §5.4. No content changes.</td></tr>
+  </tbody>
+</table>
+
+<!-- ============ CLOSING ============ -->
+<div class="closing">
+  <p>End of Book II — Enterprise Architecture, v1.0 Ratified. This document catalogues what can exist inside the Intellectual Enterprise: nine enduring capabilities, their output mappings, and the sequence that places them before any company. It is the second layer of the architecture hierarchy, filling the space the Constitution (§K.1) left to Book II. It is binding as of Founder ratification on 07 Aug 2026 through the Document 0.0 §5.4 process.</p>
+  <div class="script-line">capabilities before companies · permanence before experiment</div>
+</div>
+
+</div>
+</body>
+</html>
