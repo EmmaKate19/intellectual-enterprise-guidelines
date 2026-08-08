@@ -24,7 +24,7 @@
 - **Capabilities outlive businesses.** Organise around capabilities, not companies.
 - **Knowledge exists once.** Everything derives from it. Business Brain, not Second Brain.
 - **Stable Core vs Adaptive Edge:** Identity/Purpose/Mission/Values/Philosophy/Decision-principles are protected (Immutable/Stable). Technology/AI/Products/Marketing/Companies/Platforms/Revenue are experimental (Adaptive/Experimental).
-- **Enterprise Flywheel (ratified 06 Aug 2026, Stage 02 v0.2):** Observe → Understand → Prepare → Create → Teach → Refine → Observe.
+- **Enterprise Flywheel (proposed — ratify in Stage 02):** Observe → Understand → Prepare → Create → Teach → Refine → Observe.
 - **Guiding philosophy:** "Create knowledge that transforms people, and build systems that allow that transformation to scale without losing its integrity."
 - **Founder identity source:** 00_DIGITAL_TWIN_CORE.md (immutable). Never rewrite/reinterpret founder identity.
 
@@ -36,9 +36,9 @@ Sequence is **fixed**. Each stage = its own chat. Lower stages expand higher sta
 
 | # | Stage file | Maps to Blueprint | Status | Chat |
 |---|---|---|---|---|
-| 01 | 01_STAGE_CHARTER.md | Document 0.0 — Blueprint Charter & Editorial Standard | ☑ Complete (v0.0.1, founder-signed 06 Aug 2026) | — |
-| 02 | 02_STAGE_CONSTITUTION.md | Book I — Constitution (audit phase first, then draft) | ☑ Complete (v1.0 Ratified, 07 Aug 2026) | — |
-| 03 | 03_STAGE_ENTERPRISE_ARCH.md | Book II — Enterprise Architecture | ☐ Not started | — |
+| 01 | 01_STAGE_CHARTER.md | Document 0.0 — Blueprint Charter & Editorial Standard | ☑ Complete | — |
+| 02 | 02_STAGE_CONSTITUTION.md | Book I — Constitution (audit phase first, then draft) | ☑ Complete | — |
+| 03 | 03_STAGE_ENTERPRISE_ARCH.md | Book II — Enterprise Architecture | ☑ Complete | — |
 | 04 | 04_STAGE_GOVERNANCE.md | Book III — Governance | ☐ Not started | — |
 | 05 | 05_STAGE_KNOWLEDGE_ARCH.md | Book IV — Knowledge Architecture | ☐ Not started | — |
 | 06 | 06_STAGE_OPERATING_SYSTEM.md | Book V — Operating System (Business OS) | ☐ Not started | — |
@@ -83,14 +83,11 @@ Sequence is **fixed**. Each stage = its own chat. Lower stages expand higher sta
 
 > **Append-only.** Each completed stage adds its handover manifest here (max 5 bullets each — see HANDOVER_PROTOCOL.md). This is how downstream stages inherit upstream decisions without re-reading the full stage files. If this section exceeds ~600 words, migrate settled bullets into the relevant stage file and leave a one-line pointer.
 
-**Stage 01 — Charter:** Document 0.0 v0.0.1 — Blueprint Charter & Editorial Standard (founder-signed, 06 Aug 2026). 16 sections, 9-page PDF. Five decisions ratified (eleven Design Principles, four-state change lifecycle, Knowledge Standard, stable section IDs, formal-institutional register). Full detail in `01_STAGE_CHARTER.md`. Commit `fad240a`.
-**Stage 02 — Constitution:**
-1. **What was completed:** Book I Audit Phase (five-point audit → findings v0.2.1, Founder reviewed all §K decisions) **then** Book I v1.0 Ratified (19 sections §A–§S, 10,568 words, 33-page A4 PDF). Founder ratified as-is, no changes. All 14 checklist elements delivered; all six quality gates Pass. Full detail in `02_STAGE_CONSTITUTION.md`. Deliverables: `deliverables/1.0_BOOK_I_CONSTITUTION.*` + `deliverables/1.0_AUDIT_FINDINGS.*`.
-2. **What was decided:** Flywheel ratified (Established, §L). Two-constitution hierarchy (§B). Both profit-maximising AND mission-sustaining within ethical constraints (§N, §5.10 reconciliation — no tension). Energy-protection = constitutional gate (§M). Founder sole decision-maker (§F.1). Stable Core/Adaptive Edge operationalised (§H). "Expand, never contradict" rule (§J). Lexicon = protected founder-owned asset (§Q). AI accountability principle (§O). "No gold or metallics" deleted (§5.4 change, commit `694c6b3`).
-3. **What is unresolved / deferred:** Succession → Book IX. Operational ethics → Books III/VIII. AI accountability operationalisation → Book VIII. Commercial model → Book V. Venture framework → Book VII. Brand architecture → Book VI. (The Constitution itself is ratified and binding — these are intentionally deferred to downstream Books.)
-4. **What the next stage must know:** Book I v1.0 is the **binding** supreme governing document. Stage 03 (Book II — Enterprise Architecture) must expand without contradiction (§J.2). Stable Core (§H.1) binding; Adaptive Edge (§H.2) experimental. Energy-protection (§M) binds every venture, role, system, AI agent. Calibration test (§F.4) applies to every output. Adaptive Edge may explore metallics.
-5. **GitHub commits:** Audit: `548dfa3a` (findings md), `694c6b3` (Digital Twin). Draft v0.1: `17f59e36` (md), `c9f12677` (css), `6580e175` (html), `7b21a4e1` (pdf). Ratified v1.0: `22905630` (md), `83aee6ad` (css), `7c51b315` (html), `7a6f0cff` (pdf), + `02_STAGE_CONSTITUTION.md` & `00_GLOBAL_INDEX.md` (this commit). All on `main`, 06–07 Aug 2026.
-**Stage 03 — Enterprise Architecture:** _(empty)_
+**Stage 01 — Charter:** Document 0.0 — Blueprint Charter & Editorial Standard ratified v1.0. Established: project identity, 10-stage production line (Charter + 9 Books), editorial standard (voice guardrails, evidence labels, stability classification), DEC-ID pattern, deliverable set, naming conventions, quality gates + decision audit + architecture test. Architecture hierarchy defined: Founder → Organisation → Capabilities → Ventures → Products → Projects. Stable Core vs Adaptive Edge principle established.
+
+**Stage 02 — Constitution:** Book I — Constitution v1.0 ratified and binding. 19 sections (§A–§S): §K architecture hierarchy (Capabilities "catalogued in Book II"), §H 16-element Stable Core + 8-element Adaptive Edge, §I on/off-mission with 5 exclusions, §J expand-never-contradict rule, §L Enterprise Flywheel ratified (Observe→Understand→Prepare→Create→Teach→Refine→Observe), §M energy-protection gate binding every venture/role/system/AI agent, §N both/and commercial frame, §O AI accountability, §Q protected lexicon, §R Grounded Ethereal visual identity (palette + fonts), §S glossary + quality gates self-audit. First binding layer of the architecture.
+
+**Stage 03 — Enterprise Architecture:** Book II — Enterprise Architecture v1.0 ratified and binding. Nine-capability catalogue ratified (Research · Education · Technology · Clinical · Publishing · Media · Commerce · Investment · Impact — DEC-BII-001). Capability→output mapping ratified with Investment completed (DEC-BII-002). Organisation-before-companies sequence affirmed (DEC-BII-003). 5-division model superseded; clinic is a project not a division (DEC-BII-004). Constitutional gates applied at capability layer with capability-level vs venture-level triggering distinction (DEC-BII-005). Publishing-primary/Media-secondary energy-protective mode (DEC-BII-006). First intermittent structural audit: PASS (no contradictions, no drift). Next: Stage 04 Governance — governs how capabilities are decisioned and owned; does not re-catalogue them.
 **Stage 04 — Governance:** _(empty)_
 **Stage 05 — Knowledge Architecture:** _(empty)_
 **Stage 06 — Operating System:** _(empty)_
